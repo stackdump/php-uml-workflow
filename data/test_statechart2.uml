@@ -1,0 +1,1173 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<uml version="6">
+  <argo version="6">
+    <documentation>
+      <authorname></authorname>
+      <authoremail></authoremail>
+      <version>0.29.2</version>
+      <description>
+        
+      </description>
+    </documentation>
+    <settings>
+      <notationlanguage>UML 1.4</notationlanguage>
+      <showboldnames>false</showboldnames>
+      <useguillemots>false</useguillemots>
+      <showassociationnames>true</showassociationnames>
+      <showvisibility>false</showvisibility>
+      <showmultiplicity>false</showmultiplicity>
+      <showinitialvalue>false</showinitialvalue>
+      <showproperties>false</showproperties>
+      <showtypes>true</showtypes>
+      <showstereotypes>false</showstereotypes>
+      <showsingularmultiplicities>true</showsingularmultiplicities>
+      <defaultshadowwidth>1</defaultshadowwidth>
+      <hidebidirectionalarrows>true</hidebidirectionalarrows>    
+      <fontname>Dialog</fontname>
+      <fontsize>12</fontsize>
+      <defaultstereotypeview>0</defaultstereotypeview>
+      <activediagram>untitledModel 0</activediagram>
+    </settings>
+    <searchpath href="PROJECT_DIR" />
+    <members>
+      <member type="profile"
+              name="test_statechart2_profile.profile" />
+      <member type="xmi"
+              name="test_statechart2.xmi" />
+      <member type="pgml"
+              name="test_statechart2_untitledModel0.pgml"
+              diagramclass="org.argouml.uml.diagram.state.ui.UMLStateDiagram"
+              diagramname="untitledModel 0" />
+      <member type="todo"
+              name="test_statechart2.todo" />
+    </members>
+    <historyfile name="" />
+  </argo>
+<profile>
+		<plugin>
+			UML 1.4
+		</plugin>
+		<plugin>
+			GoodPractices
+		</plugin>
+		<plugin>
+			CodeGeneration
+		</plugin>
+</profile>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Fri Dec 18 18:07:22 CST 2009'>
+  <XMI.header>    <XMI.documentation>
+      <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
+      <XMI.exporterVersion>0.29.2(6) revised on $Date: 2007-05-12 08:08:08 +0200 (Sat, 12 May 2007) $ </XMI.exporterVersion>
+    </XMI.documentation>
+    <XMI.metamodel xmi.name="UML" xmi.version="1.4"/></XMI.header>
+  <XMI.content>
+    <UML:Model xmi.id = '127-0-1-1--31c78e62:1257a84f4ec:-8000:000000000000101E'
+      name = 'untitledModel' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+      isAbstract = 'false'>
+      <UML:Namespace.ownedElement>
+        <UML:StateMachine xmi.id = '127-0-1-1--31c78e62:1257a84f4ec:-8000:000000000000101F'
+          name = 'test2' isSpecification = 'false'>
+          <UML:StateMachine.top>
+            <UML:CompositeState xmi.id = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001020'
+              name = 'top' isSpecification = 'false' isConcurrent = 'false'>
+              <UML:CompositeState.subvertex>
+                <UML:Pseudostate xmi.id = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001021'
+                  name = 'initial' isSpecification = 'false' kind = 'initial'>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001023'/>
+                  </UML:StateVertex.outgoing>
+                </UML:Pseudostate>
+                <UML:SimpleState xmi.id = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001022'
+                  name = 'first' isSpecification = 'false'>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001052'/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001023'/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:CallAction xmi.id = '127-0-1-1-377f14c0:1257e71e6d2:-8000:0000000000000F41'
+                      isSpecification = 'false' isAsynchronous = 'false'>
+                      <UML:Action.script>
+                        <UML:ActionExpression xmi.id = '127-0-1-1--5798315a:125a38685f5:-8000:0000000000000FBD'
+                          language = '' body = '$context-&gt;foo= &apos;executed_first&apos;;&#10;Cms_Event_Manager::Raise(&apos;TEST_FOO_EVENT&apos;);'/>
+                      </UML:Action.script>
+                    </UML:CallAction>
+                  </UML:State.entry>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001051'
+                  name = 'second' isSpecification = 'false'>
+                  <UML:ModelElement.comment>
+                    <UML:Comment xmi.idref = '127-0-1-1--31c78e62:1257a84f4ec:-8000:000000000000112F'/>
+                  </UML:ModelElement.comment>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001132'/>
+                    <UML:Transition xmi.idref = '127-0-1-1-533e14c8:1257f855df6:-8000:00000000000011C3'/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001052'/>
+                    <UML:Transition xmi.idref = '127-0-1-1-533e14c8:1257f855df6:-8000:0000000000001192'/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:CallAction xmi.id = '127-0-1-1-377f14c0:1257e71e6d2:-8000:0000000000000F47'
+                      isSpecification = 'false' isAsynchronous = 'false'>
+                      <UML:Action.script>
+                        <UML:ActionExpression xmi.id = '127-0-1-1--5798315a:125a38685f5:-8000:0000000000001554'
+                          language = '' body = 'if($context-&gt;foo == &apos;executed_first&apos;) &#10;{$context-&gt;foo = null;&#10;$context-&gt;foo_count=0;}&#10;Cms_Event_Manager::Raise(&apos;TEST_FOO2_EVENT&apos;);&#10;'/>
+                      </UML:Action.script>
+                    </UML:CallAction>
+                  </UML:State.entry>
+                </UML:SimpleState>
+                <UML:FinalState xmi.id = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001131'
+                  name = 'last' isSpecification = 'false'>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '127-0-1-1-533e14c8:1257f855df6:-8000:00000000000011C3'/>
+                  </UML:StateVertex.incoming>
+                </UML:FinalState>
+                <UML:SimpleState xmi.id = '127-0-1-1-533e14c8:1257f855df6:-8000:0000000000001190'
+                  name = 'loop_node' isSpecification = 'false'>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '127-0-1-1-533e14c8:1257f855df6:-8000:0000000000001192'/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001132'/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:CallAction xmi.id = '127-0-1-1-533e14c8:1257f855df6:-8000:0000000000001193'
+                      isSpecification = 'false' isAsynchronous = 'false'>
+                      <UML:Action.script>
+                        <UML:ActionExpression xmi.id = '127-0-1-1--5798315a:125a38685f5:-8000:00000000000017D9'
+                          language = '' body = '&#10;$context-&gt;foo_count = $context-&gt;foo_count +1;&#10;$context-&gt;bar = true;&#10;Cms_Event_Manager::Raise(&apos;TEST_FOO3_EVENT&apos;);&#10;&#10;$context-&gt;bar = false; //never get to this line'/>
+                      </UML:Action.script>
+                      <UML:ModelElement.comment>
+                        <UML:Comment xmi.idref = '127-0-1-1--5798315a:125a38685f5:-8000:00000000000017DA'/>
+                      </UML:ModelElement.comment>
+                    </UML:CallAction>
+                  </UML:State.entry>
+                </UML:SimpleState>
+              </UML:CompositeState.subvertex>
+            </UML:CompositeState>
+          </UML:StateMachine.top>
+          <UML:StateMachine.transitions>
+            <UML:Transition xmi.id = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001023'
+              name = 'first' isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1--31c78e62:1257a84f4ec:-8000:000000000000104C'
+                  name = '' isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1--5798315a:125a38685f5:-8000:0000000000001605'
+                      language = '' body = 'true'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001190'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:Pseudostate xmi.idref = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001021'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001022'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001052'
+              name = 'next' isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1--31c78e62:1257a84f4ec:-8000:00000000000010DA'
+                  isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1--5798315a:125a38685f5:-8000:0000000000000FAC'
+                      language = '' body = '$context-&gt;foo == &apos;executed_first&apos;'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1--31c78e62:1257a84f4ec:-8000:00000000000010D8'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001022'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001051'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001132'
+              name = 'last' isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1--31c78e62:1257a84f4ec:-8000:000000000000116A'
+                  isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1--5798315a:125a38685f5:-8000:00000000000017AC'
+                      language = '' body = '$context-&gt;foo_count&lt;3'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001168'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001051'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '127-0-1-1-533e14c8:1257f855df6:-8000:0000000000001190'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '127-0-1-1-533e14c8:1257f855df6:-8000:0000000000001192'
+              name = 'loop' isSpecification = 'false'>
+              <UML:ModelElement.comment>
+                <UML:Comment xmi.idref = '127-0-1-1--5798315a:125a38685f5:-8000:0000000000001768'/>
+              </UML:ModelElement.comment>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1-533e14c8:1257f855df6:-8000:0000000000001229'
+                  isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1--5798315a:125a38685f5:-8000:0000000000001767'
+                      language = '' body = '$context-&gt;bar==true'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.effect>
+                <UML:CallAction xmi.id = '127-0-1-1--5798315a:125a38685f5:-8000:0000000000001606'
+                  isSpecification = 'false' isAsynchronous = 'false'>
+                  <UML:Action.script>
+                    <UML:ActionExpression xmi.id = '127-0-1-1--5798315a:125a38685f5:-8000:0000000000001780'
+                      language = '' body = '&#10;&#10;$context-&gt;bar = false;'/>
+                  </UML:Action.script>
+                </UML:CallAction>
+              </UML:Transition.effect>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1-533e14c8:1257f855df6:-8000:0000000000001227'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '127-0-1-1-533e14c8:1257f855df6:-8000:0000000000001190'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001051'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '127-0-1-1-533e14c8:1257f855df6:-8000:00000000000011C3'
+              name = 'finished' isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1-533e14c8:1257f855df6:-8000:0000000000001230'
+                  isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1--5798315a:125a38685f5:-8000:00000000000014E8'
+                      language = '' body = '$context-&gt;foo_count&gt; 2'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1-533e14c8:1257f855df6:-8000:000000000000122F'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001051'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:FinalState xmi.idref = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001131'/>
+              </UML:Transition.target>
+            </UML:Transition>
+          </UML:StateMachine.transitions>
+        </UML:StateMachine>
+        <UML:SignalEvent xmi.id = '127-0-1-1--31c78e62:1257a84f4ec:-8000:00000000000010D8'
+          name = 'next' isSpecification = 'false'>
+          <UML:SignalEvent.signal>
+            <UML:Signal xmi.idref = '127-0-1-1--31c78e62:1257a84f4ec:-8000:00000000000010D9'/>
+          </UML:SignalEvent.signal>
+        </UML:SignalEvent>
+        <UML:Signal xmi.id = '127-0-1-1--31c78e62:1257a84f4ec:-8000:00000000000010D9'
+          name = 'TEST_FOO_EVENT' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+          isAbstract = 'false'/>
+        <UML:Comment xmi.id = '127-0-1-1--31c78e62:1257a84f4ec:-8000:000000000000112F'
+          isSpecification = 'false' body = 'This is a test workflow that should transition all the way to the&#10;last state when it is loaded.&#10;&#10;NOTE: if you add significantly to this diagram XDEBUG may throw an error about using too&#10;many nested function calls.'>
+          <UML:Comment.annotatedElement>
+            <UML:SimpleState xmi.idref = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001051'/>
+          </UML:Comment.annotatedElement>
+        </UML:Comment>
+        <UML:SignalEvent xmi.id = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001168'
+          name = 'last' isSpecification = 'false'>
+          <UML:SignalEvent.signal>
+            <UML:Signal xmi.idref = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001169'/>
+          </UML:SignalEvent.signal>
+        </UML:SignalEvent>
+        <UML:Signal xmi.id = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001169'
+          name = 'TEST_FOO2_EVENT' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+          isAbstract = 'false'/>
+        <UML:SignalEvent xmi.id = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001190'
+          name = 'init' isSpecification = 'false'>
+          <UML:SignalEvent.signal>
+            <UML:Signal xmi.idref = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001191'/>
+          </UML:SignalEvent.signal>
+        </UML:SignalEvent>
+        <UML:Signal xmi.id = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001191'
+          name = 'CMS_WORKFLOW_INIT' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+          isAbstract = 'false'/>
+        <UML:SignalEvent xmi.id = '127-0-1-1-533e14c8:1257f855df6:-8000:0000000000001227'
+          name = 'loop' isSpecification = 'false'>
+          <UML:SignalEvent.signal>
+            <UML:Signal xmi.idref = '127-0-1-1-533e14c8:1257f855df6:-8000:0000000000001228'/>
+          </UML:SignalEvent.signal>
+        </UML:SignalEvent>
+        <UML:Signal xmi.id = '127-0-1-1-533e14c8:1257f855df6:-8000:0000000000001228'
+          name = 'TEST_FOO3_EVENT' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+          isAbstract = 'false'/>
+        <UML:SignalEvent xmi.id = '127-0-1-1-533e14c8:1257f855df6:-8000:000000000000122F'
+          name = 'finished' isSpecification = 'false'>
+          <UML:SignalEvent.signal>
+            <UML:Signal xmi.idref = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001169'/>
+          </UML:SignalEvent.signal>
+        </UML:SignalEvent>
+        <UML:Comment xmi.id = '127-0-1-1--5798315a:125a38685f5:-8000:0000000000001768'
+          isSpecification = 'false' body = 'Testing order of operations here&#10;need the condition to execute before the effect'>
+          <UML:Comment.annotatedElement>
+            <UML:Transition xmi.idref = '127-0-1-1-533e14c8:1257f855df6:-8000:0000000000001192'/>
+          </UML:Comment.annotatedElement>
+        </UML:Comment>
+        <UML:Comment xmi.id = '127-0-1-1--5798315a:125a38685f5:-8000:00000000000017DA'
+          isSpecification = 'false' body = 'The Next transition is triggered before we get to the last line.&#10;So it doesn&apos;t matter that bar is set to false.'>
+          <UML:Comment.annotatedElement>
+            <UML:CallAction xmi.idref = '127-0-1-1-533e14c8:1257f855df6:-8000:0000000000001193'/>
+          </UML:Comment.annotatedElement>
+        </UML:Comment>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:BooleanExpression xmi.id = '127-0-1-1--31c78e62:1257a84f4ec:-8000:000000000000118D'
+      language = '' body = '$_SESSION[&apos;foo&apos;==&apos;executed_second&apos;'/>
+    <UML:BooleanExpression xmi.id = '127-0-1-1-5585af7c:1257b2be02f:-8000:0000000000000F4C'
+      language = '' body = '$_SESSTION[&apos;foo&apos;]==&apos;executed_second&apos;'/>
+    <UML:BooleanExpression xmi.id = '127-0-1-1-533e14c8:1257f855df6:-8000:00000000000012C5'
+      language = '' body = '$_SESSION[&apos;foo&apos;]==&apos;executed_second&apos;'/>
+    <UML:BooleanExpression xmi.id = '127-0-1-1-533e14c8:1257f855df6:-8000:0000000000001990'
+      language = '' body = '$_SESSION[&apos;foo_count&apos;]&gt; 10'/>
+    <UML:BooleanExpression xmi.id = '127-0-1-1-533e14c8:1257f855df6:-8000:000000000000199E'
+      language = '' body = '$_SESSION[&apos;foo_count&apos;]&lt;2'/>
+    <UML:BooleanExpression xmi.id = '127-0-1-1-533e14c8:1257f855df6:-8000:00000000000019AA'
+      language = '' body = '$_SESSION[&apos;foo_count&apos;]&gt; 1'/>
+    <UML:BooleanExpression xmi.id = '127-0-1-1-533e14c8:1257f855df6:-8000:00000000000019D7'
+      language = '' body = '$_SESSION[&apos;foo_count&apos;]&gt; 1'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001090'
+      language = '' body = '$_SESSION[&apos;foo&apos;]=&apos;executed_first&apos;;&#10;&#10;CmsEventManager::Raise(&apos;TEST_FOO_EVENT&apos;);'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001127'
+      language = '' body = '$_SESSION[&apos;foo&apos;]=&apos;executed_s'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001162'
+      language = '' body = '$_SESSION[&apos;foo&apos;]=&apos;executed_second&apos;;&#10;Cms_Event_Manager::Raise(&apos;TEST_FOO2_EVE'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1-533e14c8:1257f855df6:-8000:000000000000119F'
+      language = '' body = '$_SESSION[&apos;'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1-533e14c8:1257f855df6:-8000:0000000000001226'
+      language = '' body = '$_SESSION[&apos;foo_count&apos;]++;&#10;Cms_Event_Manage::Raise(&apos;TEST_FOO3_EVENT&apos;);'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1-533e14c8:1257f855df6:-8000:00000000000012E5'
+      language = '' body = '$_SESSION[&apos;foo_count&apos;]= 0;&#10;Cms_Event_Manager::Raise(&apos;TEST_FOO2_EVENT&apos;);'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1-533e14c8:1257f855df6:-8000:0000000000001326'
+      language = '' body = '$_SESSION[&apos;foo_count&apos;]= 0;&#10;Cms_Event_Manager::Raise(&apos;TEST_FOO2_EVENT&apos;);'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1-533e14c8:1257f855df6:-8000:0000000000001386'
+      language = '' body = 'if($_SESSION[&apos;foo&apos;] == &apos;executed_first&apos;)&#10;{&#10;$_SESSION[&apos;foo_count&apos;]= 0;&#10;$_SESSION[&apos;foo&apos;] = &apos;&#10;}'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1-533e14c8:1257f855df6:-8000:0000000000001397'
+      language = '' body = 'if($_SESSION[&apos;foo&apos;] == &apos;executed_first&apos;)&#10;{&#10;$_SESSION[&apos;foo_count&apos;]= 0;&#10;$_SESSION[&apos;foo&apos;] = &apos;executed_second&apos;;&#10;}'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1-533e14c8:1257f855df6:-8000:00000000000013A7'
+      language = '' body = 'if($_SESSION[&apos;foo&apos;] == &apos;executed_first&apos;)'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1-533e14c8:1257f855df6:-8000:0000000000001415'
+      language = '' body = '$_SESSION[&apos;foo_count&apos;]= $_SESSION[&apos;foo_co;&#10;Cms_Event_Manager::Raise(&apos;TEST_FOO3_EVENT&apos;);'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1-533e14c8:1257f855df6:-8000:000000000000141C'
+      language = '' body = '$_SESSION[&apos;foo_count&apos;]= $_SESSION[&apos;foo_count&apos;] +;&#10;Cms_Event_Manager::Raise(&apos;TEST_FOO3_EVENT&apos;);'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1-533e14c8:1257f855df6:-8000:0000000000001421'
+      language = '' body = 'if($_SESSION[&apos;foo&apos;] == &apos;executed_first&apos;)&#10;{&#10;$_SESSION [ &apos;foo_count&apos;]= 0;&#10;$_SESSION [ &apos;foo&apos;] = &apos;executed_second&apos;;&#10;}&#10;&#10;Cms_Event_Manager::Raise(&apos;TEST_FOO2_EVENT&apos;);'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1-533e14c8:1257f855df6:-8000:0000000000001444'
+      language = '' body = 'if($_SESSION[&apos;foo&apos;] == &apos;executed_first&apos;) {$SESSI'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1-533e14c8:1257f855df6:-8000:000000000000146D'
+      language = '' body = 'if($_SESSION[&apos;foo&apos;] == &apos;executed_first&apos;) {unset($_SESSION[&apos;foo&apos;]) &amp;&amp; $_SE'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1-533e14c8:1257f855df6:-8000:0000000000001477'
+      language = '' body = 'if($_SESSION[&apos;foo&apos;] == &apos;executed_first&apos;) {unset($_SESSION[&apos;foo&apos;]) &amp;&amp; $_SESSION[&apos;foo'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1-533e14c8:1257f855df6:-8000:0000000000001489'
+      language = '' body = 'if($_SESSION[&apos;foo&apos;] == &apos;executed_first&apos;) {unset($_SESSION[&apos;foo&apos;]) &amp;&amp; $_SESSION[&apos;foo_count&apos;]'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1-533e14c8:1257f855df6:-8000:0000000000001497'
+      language = '' body = 'if($_SESSION[&apos;foo&apos;] == &apos;executed_first&apos;) {unset($_SESSION[&apos;foo&apos;]) &amp;&amp; $_SESSION[&apos;foo_count&apos;]=0;}&#10;Cms_Eve'/>
+  </XMI.content>
+</XMI>
+<pgml description="org.argouml.uml.diagram.state.ui.UMLStateDiagram|127-0-1-1--31c78e62:1257a84f4ec:-8000:000000000000101F"
+      name="untitledModel 0"
+>
+  <group name="Fig0"
+       description="org.argouml.uml.diagram.state.ui.FigInitialState[16, 296, 16, 16]pathVisible=false;stereotypeView=0;"
+       href="127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001021"
+       fill="1"
+       fillcolor="black"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <ellipse name="Fig0.0"
+      x="24"
+      y="304"
+      rx="8"
+      ry="8"
+      fill="0"
+      fillcolor="255 0 255"
+      stroke="0"
+      strokecolor="255 0 255"
+    />
+    <ellipse name="Fig0.1"
+      x="24"
+      y="304"
+      rx="8"
+      ry="8"
+      fill="1"
+      fillcolor="black"
+      stroke="1"
+      strokecolor="black"
+    />
+  </group>
+  <group name="Fig1"
+       description="org.argouml.uml.diagram.state.ui.FigSimpleState[240, 384, 301, 84]pathVisible=false;stereotypeView=0;"
+       href="127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001022"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig1.0"
+      x="240"
+      y="384"
+      width="301"
+      height="84"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="0"
+      strokecolor="255 0 255"
+      rounding="16"
+    />
+    <rectangle name="Fig1.1"
+      x="240"
+      y="384"
+      width="301"
+      height="84"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+      rounding="16"
+    />
+    <text name="Fig1.2"
+      x="242"
+      y="384"
+      width="297"
+      height="22"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >first</text>
+    <path name="Fig1.3"
+      description="org.tigris.gef.presentation.FigLine"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="240"
+              y="406" />
+      <lineto x="540"
+              y="406" />
+    </path>
+    <text name="Fig1.4"
+      x="242"
+      y="406"
+      width="297"
+      height="56"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Left"
+    >entry /$context-&gt;foo= &apos;executed_first&apos;;
+Cms_Event_Manager::Raise(&apos;TEST_FOO_EVENT&apos;);</text>
+  </group>
+  <group name="Fig2"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001023"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig0"
+      destPortFig="Fig1"
+      sourceFigNode="Fig0"
+      destFigNode="Fig1"
+      <argouml:pathitem figname="Fig2.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001023"
+                        angle="280.0"
+                        offset="38" />
+    </private>
+    <path name="Fig2.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="32"
+              y="307" />
+      <lineto x="240"
+              y="384" />
+    </path>
+  </group>
+  <group name="Fig3"
+       description="org.argouml.uml.diagram.state.ui.FigSimpleState[744, 200, 368, 112]pathVisible=false;stereotypeView=0;"
+       href="127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001051"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig3.0"
+      x="744"
+      y="200"
+      width="368"
+      height="112"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="0"
+      strokecolor="255 0 255"
+      rounding="16"
+    />
+    <rectangle name="Fig3.1"
+      x="744"
+      y="200"
+      width="368"
+      height="112"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+      rounding="16"
+    />
+    <text name="Fig3.2"
+      x="746"
+      y="200"
+      width="364"
+      height="22"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >second</text>
+    <path name="Fig3.3"
+      description="org.tigris.gef.presentation.FigLine"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="744"
+              y="222" />
+      <lineto x="1111"
+              y="222" />
+    </path>
+    <text name="Fig3.4"
+      x="746"
+      y="222"
+      width="364"
+      height="84"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Left"
+    >entry /if($context-&gt;foo == &apos;executed_first&apos;) 
+{$context-&gt;foo = null;
+$context-&gt;foo_count=0;}
+Cms_Event_Manager::Raise(&apos;TEST_FOO2_EVENT&apos;);
+</text>
+  </group>
+  <group name="Fig4"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001052"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig1"
+      destPortFig="Fig3"
+      sourceFigNode="Fig1"
+      destFigNode="Fig3"
+      <argouml:pathitem figname="Fig4.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001052"
+                        angle="-108.0"
+                        offset="77" />
+    </private>
+    <path name="Fig4.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="541"
+              y="384" />
+      <lineto x="744"
+              y="312" />
+    </path>
+  </group>
+  <group name="Fig5"
+       description="org.argouml.uml.diagram.static_structure.ui.FigComment[144, 128, 575, 90]pathVisible=false;stereotypeView=0;"
+       href="127-0-1-1--31c78e62:1257a84f4ec:-8000:000000000000112F"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig5.0"
+      x="144"
+      y="128"
+      width="575"
+      height="90"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+    />
+    <path name="Fig5.1"
+      description="org.tigris.gef.presentation.FigPoly"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="144"
+              y="128" />
+      <lineto x="708"
+              y="128" />
+      <lineto x="718"
+              y="138" />
+      <lineto x="718"
+              y="217" />
+      <lineto x="144"
+              y="217" />
+      <lineto x="144"
+              y="128" />
+    </path>
+    <path name="Fig5.2"
+      description="org.tigris.gef.presentation.FigPoly"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="708"
+              y="128" />
+      <lineto x="718"
+              y="138" />
+      <lineto x="708"
+              y="138" />
+      <lineto x="708"
+              y="128" />
+    </path>
+    <group name="Fig5.3"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[146, 130, 561, 0]"
+         href="127-0-1-1--31c78e62:1257a84f4ec:-8000:000000000000112F"
+         fill="0"
+         fillcolor="white"
+         stroke="0"
+         strokecolor="black"
+         visibility="0"
+    >
+      <private>
+      </private>
+      
+      <rectangle name="Fig5.3.0"
+        x="146"
+        y="130"
+        width="561"
+        height="0"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+      />
+    </group>
+    <text name="Fig5.4"
+      x="146"
+      y="130"
+      width="561"
+      height="86"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Left"
+    >This is a test workflow that should transition all the way to the
+last state when it is loaded.
+
+NOTE: if you add significantly to this diagram XDEBUG may throw an error about using too
+many nested function calls.</text>
+  </group>
+  <group name="Fig6"
+       description="org.argouml.uml.diagram.state.ui.FigFinalState[1680, 256, 24, 24]pathVisible=false;stereotypeView=0;"
+       href="127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001131"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <ellipse name="Fig6.0"
+      x="1692"
+      y="268"
+      rx="12"
+      ry="12"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+    />
+    <ellipse name="Fig6.1"
+      x="1692"
+      y="268"
+      rx="12"
+      ry="12"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    />
+    <ellipse name="Fig6.2"
+      x="1691"
+      y="267"
+      rx="7"
+      ry="7"
+      fill="1"
+      fillcolor="black"
+      stroke="0"
+      strokecolor="85 85 170"
+    />
+  </group>
+  <group name="Fig7"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001132"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig3.0"
+      destPortFig="Fig8"
+      sourceFigNode="Fig3"
+      destFigNode="Fig8"
+      <argouml:pathitem figname="Fig7.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1--31c78e62:1257a84f4ec:-8000:0000000000001132"
+                        angle="295.0"
+                        offset="80" />
+    </private>
+    <path name="Fig7.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="1112"
+              y="312" />
+      <lineto x="1384"
+              y="408" />
+    </path>
+  </group>
+  <group name="Fig8"
+       description="org.argouml.uml.diagram.state.ui.FigSimpleState[1384, 408, 378, 112]pathVisible=false;stereotypeView=0;"
+       href="127-0-1-1-533e14c8:1257f855df6:-8000:0000000000001190"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig8.0"
+      x="1384"
+      y="408"
+      width="378"
+      height="112"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="0"
+      strokecolor="255 0 255"
+      rounding="16"
+    />
+    <rectangle name="Fig8.1"
+      x="1384"
+      y="408"
+      width="378"
+      height="112"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+      rounding="16"
+    />
+    <text name="Fig8.2"
+      x="1386"
+      y="408"
+      width="374"
+      height="22"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >loop_node</text>
+    <path name="Fig8.3"
+      description="org.tigris.gef.presentation.FigLine"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="1384"
+              y="430" />
+      <lineto x="1761"
+              y="430" />
+    </path>
+    <text name="Fig8.4"
+      x="1386"
+      y="430"
+      width="374"
+      height="84"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Left"
+    >entry /
+$context-&gt;foo_count = $context-&gt;foo_count +1;
+$context-&gt;bar = true;
+Cms_Event_Manager::Raise(&apos;TEST_FOO3_EVENT&apos;);
+
+$context-&gt;bar = false; //never get to this line</text>
+  </group>
+  <group name="Fig9"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1-533e14c8:1257f855df6:-8000:0000000000001192"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig8.0"
+      destPortFig="Fig3.0"
+      sourceFigNode="Fig8"
+      destFigNode="Fig3"
+      <argouml:pathitem figname="Fig9.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1-533e14c8:1257f855df6:-8000:0000000000001192"
+                        angle="-122.0"
+                        offset="40" />
+      <argouml:pathitem figname="Fig9.2"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigEdgePort"
+                        ownerhref="127-0-1-1-533e14c8:1257f855df6:-8000:0000000000001192"
+                        angle="270.0"
+                        offset="0" />
+    </private>
+    <path name="Fig9.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="1384"
+              y="456" />
+      <lineto x="960"
+              y="456" />
+      <lineto x="960"
+              y="312" />
+    </path>
+  </group>
+  <group name="Fig10"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1-533e14c8:1257f855df6:-8000:00000000000011C3"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig3.0"
+      destPortFig="Fig6.0"
+      sourceFigNode="Fig3"
+      destFigNode="Fig6"
+      <argouml:pathitem figname="Fig10.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1-533e14c8:1257f855df6:-8000:00000000000011C3"
+                        angle="270.0"
+                        offset="10" />
+    </private>
+    <path name="Fig10.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="1112"
+              y="216" />
+      <lineto x="1320"
+              y="216" />
+      <lineto x="1680"
+              y="266" />
+    </path>
+  </group>
+  <group name="Fig11"
+       description="org.argouml.uml.diagram.static_structure.ui.FigComment[952, 464, 316, 60]pathVisible=false;stereotypeView=0;"
+       href="127-0-1-1--5798315a:125a38685f5:-8000:0000000000001768"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig11.0"
+      x="952"
+      y="464"
+      width="316"
+      height="60"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+    />
+    <path name="Fig11.1"
+      description="org.tigris.gef.presentation.FigPoly"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="952"
+              y="464" />
+      <lineto x="1257"
+              y="464" />
+      <lineto x="1267"
+              y="474" />
+      <lineto x="1267"
+              y="523" />
+      <lineto x="952"
+              y="523" />
+      <lineto x="952"
+              y="464" />
+    </path>
+    <path name="Fig11.2"
+      description="org.tigris.gef.presentation.FigPoly"
+      fill="1"
+      fillcolor="178 178 178"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="1257"
+              y="464" />
+      <lineto x="1267"
+              y="474" />
+      <lineto x="1257"
+              y="474" />
+      <lineto x="1257"
+              y="464" />
+    </path>
+    <group name="Fig11.3"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[954, 466, 302, 0]"
+         href="127-0-1-1--5798315a:125a38685f5:-8000:0000000000001768"
+         fill="0"
+         fillcolor="white"
+         stroke="0"
+         strokecolor="black"
+    >
+      <private>
+      </private>
+      
+      <rectangle name="Fig11.3.0"
+        x="954"
+        y="466"
+        width="302"
+        height="0"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+      />
+    </group>
+    <text name="Fig11.4"
+      x="954"
+      y="466"
+      width="302"
+      height="56"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Left"
+    >Testing order of operations here
+need the condition to execute before the effect</text>
+  </group>
+  <group name="Fig12"
+       description="org.argouml.uml.diagram.static_structure.ui.FigComment[1424, 536, 401, 64]pathVisible=false;stereotypeView=0;"
+       href="127-0-1-1--5798315a:125a38685f5:-8000:00000000000017DA"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig12.0"
+      x="1424"
+      y="536"
+      width="401"
+      height="64"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+    />
+    <path name="Fig12.1"
+      description="org.tigris.gef.presentation.FigPoly"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="1424"
+              y="536" />
+      <lineto x="1814"
+              y="536" />
+      <lineto x="1824"
+              y="546" />
+      <lineto x="1824"
+              y="599" />
+      <lineto x="1424"
+              y="599" />
+      <lineto x="1424"
+              y="536" />
+    </path>
+    <path name="Fig12.2"
+      description="org.tigris.gef.presentation.FigPoly"
+      fill="1"
+      fillcolor="178 178 178"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="1814"
+              y="536" />
+      <lineto x="1824"
+              y="546" />
+      <lineto x="1814"
+              y="546" />
+      <lineto x="1814"
+              y="536" />
+    </path>
+    <group name="Fig12.3"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[1426, 538, 387, 0]"
+         href="127-0-1-1--5798315a:125a38685f5:-8000:00000000000017DA"
+         fill="0"
+         fillcolor="white"
+         stroke="0"
+         strokecolor="black"
+    >
+      <private>
+      </private>
+      
+      <rectangle name="Fig12.3.0"
+        x="1426"
+        y="538"
+        width="387"
+        height="0"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+      />
+    </group>
+    <text name="Fig12.4"
+      x="1426"
+      y="538"
+      width="387"
+      height="60"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Left"
+    >The Next transition is triggered before we get to the last line.
+So it doesn&apos;t matter that bar is set to false.</text>
+  </group>
+</pgml>
+<todo>
+<todolist>
+</todolist>
+<resolvedcritics>
+</resolvedcritics>
+</todo>
+</uml>

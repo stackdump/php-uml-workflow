@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos  -->
+			<title>File Source for TestWorkflows.php</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+											</head>
+		<body>
+						<h1>Source for file TestWorkflows.php</h1>
+<p>Documentation is available at <a href="../Cms/Tests/_code---TestWorkflows.php.html">TestWorkflows.php</a></p>
+<div class="src-code">
+<div class="src-code"><ol><li><div class="src-line"><a name="a1"></a><span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line"><a name="a2"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></li>
+<li><div class="src-line"><a name="a3"></a><span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a4"></a><span class="src-doc">&nbsp;*&nbsp;TestWorkflows</span></div></li>
+<li><div class="src-line"><a name="a5"></a><span class="src-doc">&nbsp;*&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a6"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@uses</span><span class="src-doc">&nbsp;Cms</span></div></li>
+<li><div class="src-line"><a name="a7"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@uses</span><span class="src-doc">&nbsp;_UnitTest_Case</span></div></li>
+<li><div class="src-line"><a name="a8"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@package</span><span class="src-doc">&nbsp;Cms</span></div></li>
+<li><div class="src-line"><a name="a9"></a><span class="src-doc">&nbsp;*&nbsp;</span><span class="src-doc-coretag">@subpackage</span><span class="src-doc">&nbsp;Tests</span></div></li>
+<li><div class="src-line"><a name="a10"></a><span class="src-doc">&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a11"></a><span class="src-key">class&nbsp;</span><a href="../Cms/Tests/TestWorkflows.html">TestWorkflows</a>&nbsp;<span class="src-key">extends&nbsp;</span><span class="src-id">Cms_UnitTest_Case&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a12"></a><span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a13"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">function&nbsp;</span><a href="../Cms/Tests/TestWorkflows.html#methodskip">skip</a><span class="src-sym">(</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line"><a name="a14"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a15"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">'Using:&nbsp;&lt;a&nbsp;href=&quot;'</span>.<span class="src-id">BASE_HREF</span>.<span class="src-str">'/application/tests/data/test_statechart2.uml&quot;&gt;test_statechart2.uml&lt;/a&gt;'</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a16"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a17"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a18"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">function&nbsp;</span><a href="../Cms/Tests/TestWorkflows.html#methodsetup">setup</a><span class="src-sym">(</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line"><a name="a19"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a20"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unset<span class="src-sym">(</span><span class="src-var">$_SESSION</span><span class="src-sym">[</span><span class="src-str">'workflow'</span><span class="src-sym">]</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a21"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a22"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a23"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a24"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;TestRfpWorkflow&nbsp;&nbsp;-&nbsp;test&nbsp;the&nbsp;actual&nbsp;workflow&nbsp;being&nbsp;used&nbsp;on&nbsp;VMOL</span></div></li>
+<li><div class="src-line"><a name="a25"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a26"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;</span><span class="src-doc-coretag">@todo</span><span class="src-doc">&nbsp;we&nbsp;should&nbsp;be&nbsp;able&nbsp;to&nbsp;save&nbsp;the&nbsp;workflow&nbsp;config&nbsp;as&nbsp;php&nbsp;instead&nbsp;of&nbsp;parsing&nbsp;every&nbsp;time</span></div></li>
+<li><div class="src-line"><a name="a27"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;update&nbsp;the&nbsp;workflow&nbsp;class&nbsp;to&nbsp;do&nbsp;this</span></div></li>
+<li><div class="src-line"><a name="a28"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</span></div></li>
+<li><div class="src-line"><a name="a29"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;EXAMPLE:</span></div></li>
+<li><div class="src-line"><a name="a30"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;$workflow_config&nbsp;=&nbsp;&nbsp;new&nbsp;Cms_Workflow_Config(SITE_ROOT_CUSTOM.'/lib/Workflow/Rfp/config.uml');</span></div></li>
+<li><div class="src-line"><a name="a31"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;var_export($workflow_config);die;&nbsp;--&nbsp;should&nbsp;save&nbsp;this&nbsp;output&nbsp;to&nbsp;a&nbsp;file</span></div></li>
+<li><div class="src-line"><a name="a32"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a33"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;</span><span class="src-doc-coretag">@access</span><span class="src-doc">&nbsp;public</span></div></li>
+<li><div class="src-line"><a name="a34"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;</span><span class="src-doc-coretag">@return&nbsp;</span><span class="src-doc-type">void&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a35"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a36"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">function&nbsp;</span><a href="../Cms/Tests/TestWorkflows.html#method_TestRfpWorkflow">_TestRfpWorkflow</a><span class="src-sym">(</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line"><a name="a37"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a38"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a39"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$WF&nbsp;</span>=&nbsp;<span class="src-id"><a href="../Cms/Workflow/Cms_Workflow_Factory.html">Cms_Workflow_Factory</a></span><span class="src-sym">::</span><a href="../Cms/Workflow/Cms_Workflow_Factory.html#methodWorkflow">Workflow</a><span class="src-sym">(</span><span class="src-id">TEST_PATH</span>.<span class="src-str">'/data/test_statechart.uml'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a40"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id">AssertIsA</span><span class="src-sym">(</span><span class="src-var">$WF</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Cms_Workflow'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Did&nbsp;not&nbsp;get&nbsp;a&nbsp;workflow&nbsp;back&nbsp;from&nbsp;the&nbsp;factory&nbsp;method'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a41"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a42"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//$count&nbsp;=&nbsp;9;</span></div></li>
+<li><div class="src-line"><a name="a43"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//$this-&gt;AssertTrue(count($WF-&gt;nodes)==&nbsp;9,&nbsp;&quot;Did&nbsp;not&nbsp;find&nbsp;nodes&quot;);</span></div></li>
+<li><div class="src-line"><a name="a44"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//echo&nbsp;&quot;&lt;pre&gt;&quot;;&nbsp;echo&nbsp;count($WF-&gt;nodes).&nbsp;'&nbsp;Total&nbsp;Nodes&nbsp;&lt;hr&gt;'&nbsp;;&nbsp;print_r($WF);&nbsp;echo&nbsp;&quot;&lt;/pre&gt;&quot;;</span></div></li>
+<li><div class="src-line"><a name="a45"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a46"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a47"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a48"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-doc">/**</span></div></li>
+<li><div class="src-line"><a name="a49"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;TestAutoWorkflow&nbsp;&nbsp;-&nbsp;this&nbsp;is&nbsp;a&nbsp;sample&nbsp;workflow&nbsp;that&nbsp;should&nbsp;transition&nbsp;all&nbsp;the&nbsp;way&nbsp;to&nbsp;the&nbsp;end&nbsp;right&nbsp;after&nbsp;it&nbsp;loads</span></div></li>
+<li><div class="src-line"><a name="a50"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a51"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;</span><span class="src-doc-coretag">@todo</span><span class="src-doc">&nbsp;finish&nbsp;testint&nbsp;the&nbsp;workflow&nbsp;object&nbsp;with&nbsp;serialization</span></div></li>
+<li><div class="src-line"><a name="a52"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;</span><span class="src-doc-coretag">@access</span><span class="src-doc">&nbsp;public</span></div></li>
+<li><div class="src-line"><a name="a53"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;</span><span class="src-doc-coretag">@return&nbsp;</span><span class="src-doc-type">void&nbsp;</span></div></li>
+<li><div class="src-line"><a name="a54"></a><span class="src-doc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/</span></div></li>
+<li><div class="src-line"><a name="a55"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">function&nbsp;</span><a href="../Cms/Tests/TestWorkflows.html#methodTestAutoWorkflow">TestAutoWorkflow</a><span class="src-sym">(</span><span class="src-sym">)</span></div></li>
+<li><div class="src-line"><a name="a56"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">{</span></div></li>
+<li><div class="src-line"><a name="a57"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$WF&nbsp;</span>=&nbsp;<span class="src-id"><a href="../Cms/Workflow/Cms_Workflow_Factory.html">Cms_Workflow_Factory</a></span><span class="src-sym">::</span><a href="../Cms/Workflow/Cms_Workflow_Factory.html#methodWorkflow">Workflow</a><span class="src-sym">(</span><span class="src-id">TEST_PATH</span>.<span class="src-str">'/data/test_statechart2.uml'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a58"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></li>
+<li><div class="src-line"><a name="a59"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//$WF&nbsp;=&nbsp;unserialize(serialize($WF));&nbsp;//simulate&nbsp;serializing&nbsp;this&nbsp;object</span></div></li>
+<li><div class="src-line"><a name="a60"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a61"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id">AssertIsA</span><span class="src-sym">(</span><span class="src-var">$WF</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Cms_Workflow'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Did&nbsp;not&nbsp;get&nbsp;a&nbsp;workflow&nbsp;back&nbsp;from&nbsp;the&nbsp;factory&nbsp;method'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a62"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a63"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$WF</span><span class="src-sym">-&gt;</span><span class="src-id">reset</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a64"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//echo&nbsp;&quot;&lt;pre&gt;&quot;;&nbsp;echo&nbsp;count($WF-&gt;nodes).&nbsp;'&nbsp;Total&nbsp;Nodes&nbsp;&lt;hr&gt;'&nbsp;;&nbsp;print_r($WF);&nbsp;echo&nbsp;&quot;&lt;/pre&gt;&quot;;</span></div></li>
+<li><div class="src-line"><a name="a65"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$WF</span><span class="src-sym">-&gt;</span><span class="src-id">Init</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a66"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a67"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a68"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id">AssertTrue</span><span class="src-sym">(</span><span class="src-var">$WF</span><span class="src-sym">-&gt;</span><span class="src-id">isComplete</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Workflow&nbsp;was&nbsp;not&nbsp;completed'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a69"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a70"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id">AssertTrue</span><span class="src-sym">(</span><span class="src-var">$WF</span><span class="src-sym">-&gt;</span><span class="src-id">getContext</span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">-&gt;</span><span class="src-id">foo_count&nbsp;</span>==&nbsp;<span class="src-num">3&nbsp;</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Loop&nbsp;in&nbsp;workflow&nbsp;did&nbsp;not&nbsp;seem&nbsp;to&nbsp;work.'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a71"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a72"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//var_dump($WF-&gt;getContext());&nbsp;//die;</span></div></li>
+<li><div class="src-line"><a name="a73"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id">AssertTrue</span><span class="src-sym">(</span><a href="http://www.php.net/count">count</a><span class="src-sym">(</span><span class="src-var">$WF</span><span class="src-sym">-&gt;</span><span class="src-id">stateHistory</span><span class="src-sym">)&nbsp;</span>==&nbsp;<span class="src-num">10</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Did&nbsp;not&nbsp;find&nbsp;10&nbsp;states&nbsp;in&nbsp;the&nbsp;stateHistory'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a74"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a75"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//var_dump($GLOBALS[CMS_EVT_KEY]);</span></div></li>
+<li><div class="src-line"><a name="a76"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a77"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//$count&nbsp;=&nbsp;4;</span></div></li>
+<li><div class="src-line"><a name="a78"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-comm">//$this-&gt;AssertEqual(count($WF-&gt;nodes),&nbsp;$count,&nbsp;&quot;Did&nbsp;not&nbsp;find&nbsp;$count&nbsp;nodes&quot;);</span></div></li>
+<li><div class="src-line"><a name="a79"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a80"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$this</span><span class="src-sym">-&gt;</span><span class="src-id">assertTrue</span><span class="src-sym">(</span><a href="http://www.php.net/count">count</a><span class="src-sym">(</span><span class="src-var">$_SESSION</span><span class="src-sym">[</span><span class="src-str">'workflow'</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-var">$WF</span><span class="src-sym">-&gt;</span><span class="src-id">id</span><span class="src-sym">]</span><span class="src-sym">[</span><span class="src-str">'stateHistory'</span><span class="src-sym">]</span><span class="src-sym">)&nbsp;</span>==&nbsp;<span class="src-num">10</span><span class="src-sym">,&nbsp;</span><span class="src-str">'Session&nbsp;state&nbsp;history&nbsp;did&nbsp;not&nbsp;match&nbsp;class&nbsp;attribute'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line"><a name="a81"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></li>
+<li><div class="src-line"><a name="a82"></a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line"><a name="a83"></a>&nbsp;</div></li>
+<li><div class="src-line"><a name="a84"></a><span class="src-sym">}</span></div></li>
+</ol></div>
+</div>
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 27 Jan 2011 11:48:54 -0800 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</body>
+</html>

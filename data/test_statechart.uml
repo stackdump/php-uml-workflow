@@ -1,0 +1,3890 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<uml version="6">
+  <argo version="6">
+    <documentation>
+      <authorname>Matt York</authorname>
+      <authoremail>matty@newmediagateway.com</authoremail>
+      <version>0.29.2</version>
+      <description>
+        
+      </description>
+    </documentation>
+    <settings>
+      <notationlanguage>UML 1.4</notationlanguage>
+      <showboldnames>false</showboldnames>
+      <useguillemots>false</useguillemots>
+      <showassociationnames>true</showassociationnames>
+      <showvisibility>false</showvisibility>
+      <showmultiplicity>false</showmultiplicity>
+      <showinitialvalue>false</showinitialvalue>
+      <showproperties>false</showproperties>
+      <showtypes>true</showtypes>
+      <showstereotypes>false</showstereotypes>
+      <showsingularmultiplicities>true</showsingularmultiplicities>
+      <defaultshadowwidth>1</defaultshadowwidth>
+      <hidebidirectionalarrows>true</hidebidirectionalarrows>    
+      <fontname>Dialog</fontname>
+      <fontsize>12</fontsize>
+      <defaultstereotypeview>0</defaultstereotypeview>
+      <activediagram>workflow</activediagram>
+    </settings>
+    <searchpath href="PROJECT_DIR" />
+    <members>
+      <member type="profile"
+              name="config_profile.profile" />
+      <member type="xmi"
+              name="config.xmi" />
+      <member type="pgml"
+              name="config_workflow.pgml"
+              diagramclass="org.argouml.uml.diagram.state.ui.UMLStateDiagram"
+              diagramname="workflow" />
+      <member type="todo"
+              name="config.todo" />
+    </members>
+    <historyfile name="" />
+  </argo>
+<profile>
+		<plugin>
+			UML 1.4
+		</plugin>
+</profile>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Thu Jan 14 18:21:46 CST 2010'>
+  <XMI.header>    <XMI.documentation>
+      <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
+      <XMI.exporterVersion>0.29.2(6) revised on $Date: 2007-05-12 08:08:08 +0200 (Sat, 12 May 2007) $ </XMI.exporterVersion>
+    </XMI.documentation>
+    <XMI.metamodel xmi.name="UML" xmi.version="1.4"/></XMI.header>
+  <XMI.content>
+    <UML:Model xmi.id = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000000E76'
+      name = 'MeetingsCentral Workflow' isSpecification = 'false' isRoot = 'false'
+      isLeaf = 'false' isAbstract = 'false'>
+      <UML:Namespace.ownedElement>
+        <UML:StateMachine xmi.id = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000000E77'
+          name = 'rfp process' isSpecification = 'false'>
+          <UML:StateMachine.top>
+            <UML:CompositeState xmi.id = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000000E78'
+              name = 'top' isSpecification = 'false' isConcurrent = 'false'>
+              <UML:CompositeState.subvertex>
+                <UML:Pseudostate xmi.id = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000000E79'
+                  name = 'Begin' isSpecification = 'false' kind = 'initial'>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '127-0-1-1-70995425:1260027e59f:-8000:0000000000001005'/>
+                  </UML:StateVertex.outgoing>
+                </UML:Pseudostate>
+                <UML:SimpleState xmi.id = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001334'
+                  name = 'MeetingDetail' isSpecification = 'false'>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:000000000000133C'/>
+                    <UML:Transition xmi.idref = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001E18'/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '127-0-1-1--213ed12b:125a34f35fe:-8000:0000000000000F84'/>
+                    <UML:Transition xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001000'/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:CallAction xmi.id = '127-0-1-1--e9f70a5:125d6b4531a:-8000:0000000000001498'
+                      name = 'Entry' isSpecification = 'false' isAsynchronous = 'false'>
+                      <UML:Action.recurrence>
+                        <UML:IterationExpression xmi.id = '127-0-1-1--e9f70a5:125d6b4531a:-8000:00000000000014E1'
+                          language = '' body = ''/>
+                      </UML:Action.recurrence>
+                      <UML:Action.script>
+                        <UML:ActionExpression xmi.id = '127-0-1-1--7fcce3:125e0cf721b:-8000:00000000000013BF'
+                          language = '' body = '&#10;$context-&gt;stage=1;&#10;Workflow_Action::Reload();&#10;'/>
+                      </UML:Action.script>
+                    </UML:CallAction>
+                  </UML:State.entry>
+                  <UML:State.doActivity>
+                    <UML:CallAction xmi.id = '127-0-1-1--e9f70a5:125d6b4531a:-8000:00000000000014AF'
+                      name = 'Do' isSpecification = 'false' isAsynchronous = 'false'>
+                      <UML:Action.script>
+                        <UML:ActionExpression xmi.id = '127-0-1-1--7fcce3:125e0cf721b:-8000:00000000000013BD'
+                          language = '' body = '&#10;if($context-&gt;current_meeting[&apos;id&apos;] &gt; 0)&#10;{&#10;$_GET[&apos;f&apos;]=&apos;edit&apos;;&#10;$_GET[&apos;id&apos;] = $context-&gt;current_meeting[&apos;id&apos;];&#10;}&#10;else&#10;{&#10;$_GET[&apos;f&apos;]=&apos;add&apos;;&#10;}'/>
+                      </UML:Action.script>
+                    </UML:CallAction>
+                  </UML:State.doActivity>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id = '127-0-1-1--1f4ec60c:1258ebde325:-8000:000000000000133B'
+                  name = 'HotelSearch' isSpecification = 'false'>
+                  <UML:ModelElement.comment>
+                    <UML:Comment xmi.idref = '127-0-1-1-53667c43:125e648f310:-8000:00000000000016FF'/>
+                  </UML:ModelElement.comment>
+                  <UML:ModelElement.taggedValue>
+                    <UML:TaggedValue xmi.id = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001529'
+                      isSpecification = 'false'/>
+                  </UML:ModelElement.taggedValue>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '127-0-1-1-3e1aac4d:125961f596d:-8000:0000000000000F5E'/>
+                    <UML:Transition xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001002'/>
+                    <UML:Transition xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001793'/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001342'/>
+                    <UML:Transition xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:00000000000010D5'/>
+                    <UML:Transition xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001798'/>
+                    <UML:Transition xmi.idref = '127-0-1-1--7fcce3:125e0cf721b:-8000:0000000000001342'/>
+                    <UML:Transition xmi.idref = '127-0-1-1-53667c43:125e648f310:-8000:00000000000016D3'/>
+                    <UML:Transition xmi.idref = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001972'/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:CallAction xmi.id = '127-0-1-1--7245fb5e:1259301d999:-8000:00000000000012C5'
+                      name = 'Entry' isSpecification = 'false' isAsynchronous = 'false'>
+                      <UML:Action.script>
+                        <UML:ActionExpression xmi.id = '127-0-1-1--7fcce3:125e0cf721b:-8000:00000000000013C3'
+                          language = '' body = '&#10;$context-&gt;stage=3;&#10;Workflow_Action::Reload();&#10;'/>
+                      </UML:Action.script>
+                    </UML:CallAction>
+                  </UML:State.entry>
+                  <UML:State.doActivity>
+                    <UML:CallAction xmi.id = '127-0-1-1--4e75307b:125981f21aa:-8000:000000000000152A'
+                      name = 'Do' isSpecification = 'false' isAsynchronous = 'false'>
+                      <UML:Action.script>
+                        <UML:ActionExpression xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:00000000000015EC'
+                          language = '' body = '&#10;if(empty($_REQUEST[&apos;form_action&apos;]))&#10;{&#10;$_REQUEST[&apos;form_action&apos;] = &apos;Auto&apos;; &#10;}&#10;&#10;$_REQUEST[&apos;method&apos;] = $context-&gt;method;&#10;$_REQUEST[&apos;meeting&apos;] = $context-&gt;current_meeting[&apos;id&apos;];&#10;&#10;'/>
+                      </UML:Action.script>
+                      <UML:ModelElement.taggedValue>
+                        <UML:TaggedValue xmi.id = '127-0-1-1--e9f70a5:125d6b4531a:-8000:00000000000012B1'
+                          isSpecification = 'false'>
+                          <UML:TaggedValue.dataValue>Set the meeting id in the request
+this allows the meeting search page to get dates and room count from the meeting record.
+
+This will skip the search options page and go straight to results</UML:TaggedValue.dataValue>
+                          <UML:TaggedValue.type>
+                            <UML:TagDefinition xmi.idref = '127-0-1-1--4e75307b:125981f21aa:-8000:0000000000001267'/>
+                          </UML:TaggedValue.type>
+                        </UML:TaggedValue>
+                      </UML:ModelElement.taggedValue>
+                    </UML:CallAction>
+                  </UML:State.doActivity>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id = '127-0-1-1--1f4ec60c:1258ebde325:-8000:000000000000133F'
+                  name = 'ChangeSchedule' isSpecification = 'false'>
+                  <UML:ModelElement.taggedValue>
+                    <UML:TaggedValue xmi.id = '127-0-1-1-70995425:1260027e59f:-8000:0000000000001147'
+                      isSpecification = 'false'>
+                      <UML:TaggedValue.dataValue>This is the only state with an internal transition</UML:TaggedValue.dataValue>
+                      <UML:TaggedValue.type>
+                        <UML:TagDefinition xmi.idref = '127-0-1-1--4e75307b:125981f21aa:-8000:0000000000001267'/>
+                      </UML:TaggedValue.type>
+                    </UML:TaggedValue>
+                  </UML:ModelElement.taggedValue>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '127-0-1-1-70995425:1260027e59f:-8000:000000000000110A'/>
+                    <UML:Transition xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001342'/>
+                    <UML:Transition xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001001'/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '127-0-1-1-70995425:1260027e59f:-8000:000000000000110A'/>
+                    <UML:Transition xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:00000000000010BD'/>
+                    <UML:Transition xmi.idref = '127-0-1-1-53667c43:125e648f310:-8000:000000000000163A'/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:CallAction xmi.id = '127-0-1-1-3e1aac4d:125961f596d:-8000:0000000000000F7E'
+                      name = 'Entry' isSpecification = 'false' isAsynchronous = 'false'>
+                      <UML:Action.script>
+                        <UML:ActionExpression xmi.id = '127-0-1-1--7fcce3:125e0cf721b:-8000:00000000000013C9'
+                          language = '' body = '&#10;$context-&gt;stage=2;&#10;Workflow_Action::Reload();&#10;'/>
+                      </UML:Action.script>
+                    </UML:CallAction>
+                  </UML:State.entry>
+                  <UML:State.internalTransition>
+                    <UML:Transition xmi.id = '127-0-1-1-70995425:1260027e59f:-8000:000000000000110A'
+                      name = 'form_submitted' isSpecification = 'false'>
+                      <UML:ModelElement.taggedValue>
+                        <UML:TaggedValue xmi.id = '127-0-1-1-70995425:1260027e59f:-8000:0000000000001166'
+                          isSpecification = 'false'>
+                          <UML:TaggedValue.dataValue>reload the page after a sucessfull submission</UML:TaggedValue.dataValue>
+                          <UML:TaggedValue.type>
+                            <UML:TagDefinition xmi.idref = '127-0-1-1--4e75307b:125981f21aa:-8000:0000000000001267'/>
+                          </UML:TaggedValue.type>
+                        </UML:TaggedValue>
+                      </UML:ModelElement.taggedValue>
+                      <UML:Transition.guard>
+                        <UML:Guard xmi.id = '127-0-1-1-70995425:1260027e59f:-8000:0000000000001141'
+                          isSpecification = 'false'>
+                          <UML:Guard.expression>
+                            <UML:BooleanExpression xmi.id = '127-0-1-1-70995425:1260027e59f:-8000:0000000000001146'
+                              language = '' body = 'true'/>
+                          </UML:Guard.expression>
+                        </UML:Guard>
+                      </UML:Transition.guard>
+                      <UML:Transition.effect>
+                        <UML:CallAction xmi.id = '127-0-1-1-70995425:1260027e59f:-8000:0000000000001118'
+                          name = 'reload' isSpecification = 'false' isAsynchronous = 'false'>
+                          <UML:Action.script>
+                            <UML:ActionExpression xmi.id = '127-0-1-1-70995425:1260027e59f:-8000:0000000000001165'
+                              language = '' body = '&#10;Workflow_Action::Reload();&#10;'/>
+                          </UML:Action.script>
+                        </UML:CallAction>
+                      </UML:Transition.effect>
+                      <UML:Transition.trigger>
+                        <UML:SignalEvent xmi.idref = '127-0-1-1-70995425:1260027e59f:-8000:000000000000110B'/>
+                      </UML:Transition.trigger>
+                      <UML:Transition.source>
+                        <UML:SimpleState xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:000000000000133F'/>
+                      </UML:Transition.source>
+                      <UML:Transition.target>
+                        <UML:SimpleState xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:000000000000133F'/>
+                      </UML:Transition.target>
+                    </UML:Transition>
+                  </UML:State.internalTransition>
+                  <UML:State.doActivity>
+                    <UML:CallAction xmi.id = '127-0-1-1--e9f70a5:125d6b4531a:-8000:00000000000012B4'
+                      name = 'Do' isSpecification = 'false' isAsynchronous = 'false'>
+                      <UML:Action.script>
+                        <UML:ActionExpression xmi.id = '127-0-1-1-70995425:1260027e59f:-8000:0000000000001117'
+                          language = '' body = '&#10;$_GET[&apos;f&apos;]= (empty($_GET[&apos;f&apos;]))? &apos;add&apos; : $_GET[&apos;f&apos;];&#10;$_REQUEST[&apos;meeting_id&apos;] = $context-&gt;current_meeting[&apos;id&apos;];&#10;'/>
+                      </UML:Action.script>
+                    </UML:CallAction>
+                  </UML:State.doActivity>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001341'
+                  name = 'SendRfp' isSpecification = 'false'>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:00000000000013A0'/>
+                    <UML:Transition xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001003'/>
+                    <UML:Transition xmi.idref = '127-0-1-1--7fcce3:125e0cf721b:-8000:0000000000001342'/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '127-0-1-1-3e1aac4d:125961f596d:-8000:0000000000000F5E'/>
+                    <UML:Transition xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:00000000000010F2'/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:CallAction xmi.id = '127-0-1-1--e9f70a5:125d6b4531a:-8000:00000000000013DB'
+                      name = 'Entry' isSpecification = 'false' isAsynchronous = 'false'>
+                      <UML:Action.script>
+                        <UML:ActionExpression xmi.id = '127-0-1-1--7fcce3:125e0cf721b:-8000:00000000000013B9'
+                          language = '' body = '&#10;$context-&gt;stage=4;&#10;Workflow_Action::Reload();'/>
+                      </UML:Action.script>
+                    </UML:CallAction>
+                  </UML:State.entry>
+                </UML:SimpleState>
+                <UML:FinalState xmi.id = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001347'
+                  name = 'End' isSpecification = 'false'>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:00000000000013A0'/>
+                    <UML:Transition xmi.idref = '127-0-1-1-53667c43:125e648f310:-8000:00000000000017DB'/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:CallAction xmi.id = '127-0-1-1--bd4b199:12610e78e5a:-8000:0000000000000FDE'
+                      name = 'Refresh the page.' isSpecification = 'false' isAsynchronous = 'false'>
+                      <UML:Action.script>
+                        <UML:ActionExpression xmi.id = '127-0-1-1--bd4b199:12610e78e5a:-8000:0000000000000FFE'
+                          language = '' body = 'Workflow_Action::Reload();'/>
+                      </UML:Action.script>
+                    </UML:CallAction>
+                  </UML:State.entry>
+                </UML:FinalState>
+                <UML:SimpleState xmi.id = '127-0-1-1--213ed12b:125a34f35fe:-8000:0000000000000F81'
+                  name = 'Start' isSpecification = 'false'>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '127-0-1-1--213ed12b:125a34f35fe:-8000:0000000000000F84'/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '127-0-1-1--7245fb5e:1259301d999:-8000:0000000000001292'/>
+                    <UML:Transition xmi.idref = '127-0-1-1-329a32c4:125bc60236f:-8000:0000000000001065'/>
+                    <UML:Transition xmi.idref = '127-0-1-1-329a32c4:125bc60236f:-8000:0000000000001070'/>
+                    <UML:Transition xmi.idref = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001DE8'/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:CallAction xmi.id = '127-0-1-1-329a32c4:125bc60236f:-8000:000000000000107A'
+                      name = 'Entry' isSpecification = 'false' isAsynchronous = 'false'>
+                      <UML:Action.script>
+                        <UML:ActionExpression xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001E5D'
+                          language = '' body = '&#10;$context-&gt;stage=0;&#10;&#10;$context-&gt;stage_def = array(&#10;          1 =&gt; &apos;Create Your Meeting&apos;,    &#10;          2 =&gt; &apos;Create Schedule&apos; ,&#10;          3 =&gt; &apos;Search For Hotels&apos;,&#10;          4 =&gt; &apos;Book / Request Proposal&apos; ) ;  &#10;&#10;Workflow_Action::Reload();&#10;'/>
+                      </UML:Action.script>
+                    </UML:CallAction>
+                  </UML:State.entry>
+                  <UML:State.doActivity>
+                    <UML:CallAction xmi.id = '127-0-1-1--213ed12b:125a34f35fe:-8000:0000000000000FAE'
+                      name = 'Do' isSpecification = 'false' isAsynchronous = 'false'>
+                      <UML:Action.script>
+                        <UML:ActionExpression xmi.id = '127-0-1-1-70995425:1260027e59f:-8000:0000000000001101'
+                          language = '' body = '&#10;if(! empty($_GET[&apos;method&apos;]))&#10;{&#10;$context-&gt;method = $_GET[&apos;method&apos;];&#10;}&#10;'/>
+                      </UML:Action.script>
+                    </UML:CallAction>
+                  </UML:State.doActivity>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id = '127-0-1-1--213ed12b:125a34f35fe:-8000:0000000000000FAD'
+                  name = 'Login' isSpecification = 'false'>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '127-0-1-1-329a32c4:125bc60236f:-8000:0000000000001040'/>
+                    <UML:Transition xmi.idref = '127-0-1-1-329a32c4:125bc60236f:-8000:0000000000001065'/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '127-0-1-1-329a32c4:125bc60236f:-8000:0000000000000F8E'/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:CallAction xmi.id = '127-0-1-1--7fcce3:125e0cf721b:-8000:0000000000001019'
+                      name = 'Entry' isSpecification = 'false' isAsynchronous = 'false'>
+                      <UML:Action.script>
+                        <UML:ActionExpression xmi.id = '127-0-1-1-2977db2f:125fb724905:-8000:0000000000001671'
+                          language = '' body = '&#10;$context-&gt;stage=1;&#10;&#10;$context-&gt;stage_def = array(&#10;1=&gt; &apos;Sign in or Register to Begin Meeting Creation&apos;,&#10;);'/>
+                      </UML:Action.script>
+                    </UML:CallAction>
+                  </UML:State.entry>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id = '127-0-1-1-329a32c4:125bc60236f:-8000:000000000000103F'
+                  name = 'Register' isSpecification = 'false'>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '127-0-1-1-329a32c4:125bc60236f:-8000:0000000000001070'/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '127-0-1-1-329a32c4:125bc60236f:-8000:0000000000001040'/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.doActivity>
+                    <UML:CallAction xmi.id = '127-0-1-1--e9f70a5:125d6b4531a:-8000:00000000000017CC'
+                      name = 'Do' isSpecification = 'false' isAsynchronous = 'false'>
+                      <UML:Action.script>
+                        <UML:ActionExpression xmi.id = '127-0-1-1--7fcce3:125e0cf721b:-8000:00000000000013BB'
+                          language = '' body = '&#10;$_REQUEST[&apos;f&apos;] = &apos;add&apos;;'/>
+                      </UML:Action.script>
+                    </UML:CallAction>
+                  </UML:State.doActivity>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000000FFF'
+                  name = '_GoBack' isSpecification = 'false'>
+                  <UML:ModelElement.taggedValue>
+                    <UML:TaggedValue xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001173'
+                      isSpecification = 'false'>
+                      <UML:TaggedValue.dataValue>Immediately kick off the next transition by raising 
+the event again.
+
+We should never really get stuck on this transition.</UML:TaggedValue.dataValue>
+                      <UML:TaggedValue.type>
+                        <UML:TagDefinition xmi.idref = '127-0-1-1--4e75307b:125981f21aa:-8000:0000000000001267'/>
+                      </UML:TaggedValue.type>
+                    </UML:TaggedValue>
+                  </UML:ModelElement.taggedValue>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001000'/>
+                    <UML:Transition xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:00000000000010BD'/>
+                    <UML:Transition xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:00000000000010D5'/>
+                    <UML:Transition xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:00000000000010F2'/>
+                    <UML:Transition xmi.idref = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001DE8'/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001001'/>
+                    <UML:Transition xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001002'/>
+                    <UML:Transition xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001003'/>
+                    <UML:Transition xmi.idref = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001E18'/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:CallAction xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001142'
+                      name = 'Entry' isSpecification = 'false' isAsynchronous = 'false'>
+                      <UML:Action.script>
+                        <UML:ActionExpression xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001F11'
+                          language = '' body = '&#10;Cms_Event_Manager::Raise(&apos;CMS_WORKFLOW_BACK&apos;);&#10;'/>
+                      </UML:Action.script>
+                    </UML:CallAction>
+                  </UML:State.entry>
+                  <UML:State.doActivity>
+                    <UML:CallAction xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001E5F'
+                      isSpecification = 'false' isAsynchronous = 'false'>
+                      <UML:Action.script>
+                        <UML:ActionExpression xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001F0D'
+                          language = '' body = '&#10;throw new Cms_Workflow_Exception(&apos;Workflow is stuck on GoBack&apos;);'/>
+                      </UML:Action.script>
+                    </UML:CallAction>
+                  </UML:State.doActivity>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001792'
+                  name = 'HotelDetail' isSpecification = 'false'>
+                  <UML:ModelElement.taggedValue>
+                    <UML:TaggedValue xmi.id = '127-0-1-1--7fcce3:125e0cf721b:-8000:00000000000013D2'
+                      isSpecification = 'false'>
+                      <UML:TaggedValue.dataValue>This is simply a hotel browse page</UML:TaggedValue.dataValue>
+                      <UML:TaggedValue.type>
+                        <UML:TagDefinition xmi.idref = '127-0-1-1--4e75307b:125981f21aa:-8000:0000000000001267'/>
+                      </UML:TaggedValue.type>
+                    </UML:TaggedValue>
+                  </UML:ModelElement.taggedValue>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001798'/>
+                    <UML:Transition xmi.idref = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001800'/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001793'/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001639'
+                  name = '_MeetingSelect' isSpecification = 'false'>
+                  <UML:ModelElement.comment>
+                    <UML:Comment xmi.idref = '127-0-1-1-53667c43:125e648f310:-8000:00000000000016FF'/>
+                  </UML:ModelElement.comment>
+                  <UML:ModelElement.taggedValue>
+                    <UML:TaggedValue xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001971'
+                      isSpecification = 'false'>
+                      <UML:TaggedValue.dataValue>If a user selects more than 25 rooms we need to get a quote and not book a meeting.</UML:TaggedValue.dataValue>
+                      <UML:TaggedValue.type>
+                        <UML:TagDefinition xmi.idref = '127-0-1-1--4e75307b:125981f21aa:-8000:0000000000001267'/>
+                      </UML:TaggedValue.type>
+                    </UML:TaggedValue>
+                  </UML:ModelElement.taggedValue>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '127-0-1-1-53667c43:125e648f310:-8000:000000000000163A'/>
+                    <UML:Transition xmi.idref = '127-0-1-1-53667c43:125e648f310:-8000:00000000000016D3'/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:000000000000133C'/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:CallAction xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:000000000000163C'
+                      name = 'Entry' isSpecification = 'false' isAsynchronous = 'false'>
+                      <UML:Action.script>
+                        <UML:ActionExpression xmi.id = '127-0-1-1-7c8f56ad:1262f5a6059:-8000:0000000000001021'
+                          language = '' body = '&#10;$context-&gt;current_meeting = $context-&gt;event-&gt;record-&gt;toArray();&#10;&#10;if($context-&gt;current_meeting[&apos;rooms&apos;] &gt; 22)&#10;{&#10;$context-&gt;method=&apos;rfp&apos;;&#10;}&#10;&#10;Cms_Event_Manager::Raise(&apos;MEETINGSCENTRAL_MEETING_SELECTED&apos;);'/>
+                      </UML:Action.script>
+                    </UML:CallAction>
+                  </UML:State.entry>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:00000000000017DA'
+                  name = 'BookHotel' isSpecification = 'false'>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '127-0-1-1-53667c43:125e648f310:-8000:00000000000017DB'/>
+                    <UML:Transition xmi.idref = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001972'/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001800'/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:CallAction xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:00000000000017E3'
+                      name = 'Entry' isSpecification = 'false' isAsynchronous = 'false'>
+                      <UML:Action.script>
+                        <UML:ActionExpression xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001837'
+                          language = '' body = '&#10;$context-&gt;stage=4;'/>
+                      </UML:Action.script>
+                    </UML:CallAction>
+                  </UML:State.entry>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id = '127-0-1-1-70995425:1260027e59f:-8000:0000000000001004'
+                  name = '_Load' isSpecification = 'false'>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref = '127-0-1-1--7245fb5e:1259301d999:-8000:0000000000001292'/>
+                    <UML:Transition xmi.idref = '127-0-1-1-329a32c4:125bc60236f:-8000:0000000000000F8E'/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref = '127-0-1-1-70995425:1260027e59f:-8000:0000000000001005'/>
+                  </UML:StateVertex.incoming>
+                  <UML:State.entry>
+                    <UML:CallAction xmi.id = '127-0-1-1-70995425:1260027e59f:-8000:000000000000100B'
+                      name = 'Entry' isSpecification = 'false' isAsynchronous = 'false'>
+                      <UML:Action.script>
+                        <UML:ActionExpression xmi.id = '127-0-1-1-70995425:1260027e59f:-8000:0000000000001104'
+                          language = '' body = '&#10;$context-&gt;method=$_GET[&apos;method&apos;];&#10;&#10;Cms_Event_Manager::Raise(&apos;MEETINGSCENTRAL_WORKFLOW_LOAD&apos;);'/>
+                      </UML:Action.script>
+                    </UML:CallAction>
+                  </UML:State.entry>
+                </UML:SimpleState>
+              </UML:CompositeState.subvertex>
+            </UML:CompositeState>
+          </UML:StateMachine.top>
+          <UML:StateMachine.transitions>
+            <UML:Transition xmi.id = '127-0-1-1--1f4ec60c:1258ebde325:-8000:000000000000133C'
+              name = 'save_meeting_transition' isSpecification = 'false'>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id = '127-0-1-1--4e75307b:125981f21aa:-8000:000000000000126A'
+                  isSpecification = 'false'>
+                  <UML:TaggedValue.dataValue>On saving the form perform the transition &amp; save the new record in session.
+</UML:TaggedValue.dataValue>
+                  <UML:TaggedValue.type>
+                    <UML:TagDefinition xmi.idref = '127-0-1-1--4e75307b:125981f21aa:-8000:0000000000001267'/>
+                  </UML:TaggedValue.type>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1--1f4ec60c:1258ebde325:-8000:000000000000136C'
+                  isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001642'
+                      language = '' body = 'true'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1--7245fb5e:1259301d999:-8000:0000000000001299'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001334'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001639'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001342'
+              name = 'next' isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001386'
+                  name = 'next' isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1--e9f70a5:125d6b4531a:-8000:0000000000001335'
+                      language = '' body = 'isset($_REQUEST[&apos;next&apos;])'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001349'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:000000000000133F'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:000000000000133B'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '127-0-1-1--1f4ec60c:1258ebde325:-8000:00000000000013A0'
+              name = 'done_rfp_sent' isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1--1f4ec60c:1258ebde325:-8000:00000000000013A1'
+                  isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1--bd4b199:12610e78e5a:-8000:0000000000000FD6'
+                      language = '' body = 'true'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1--bd4b199:12610e78e5a:-8000:0000000000000FD0'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001341'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:FinalState xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001347'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '127-0-1-1--7245fb5e:1259301d999:-8000:0000000000001292'
+              name = 'already_logged_in' isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1--7245fb5e:1259301d999:-8000:0000000000001293'
+                  isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1-329a32c4:125bc60236f:-8000:0000000000000FF0'
+                      language = '' body = 'Workflow_Condition::isLoggedIn()'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1-70995425:1260027e59f:-8000:0000000000001035'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '127-0-1-1-70995425:1260027e59f:-8000:0000000000001004'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '127-0-1-1--213ed12b:125a34f35fe:-8000:0000000000000F81'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '127-0-1-1-3e1aac4d:125961f596d:-8000:0000000000000F5E'
+              name = 'hotels_selected_get_quote' isSpecification = 'false'>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id = '127-0-1-1-70995425:1260027e59f:-8000:0000000000001109'
+                  isSpecification = 'false'>
+                  <UML:TaggedValue.dataValue>A user must have at least on hotel selected for an RFP</UML:TaggedValue.dataValue>
+                  <UML:TaggedValue.type>
+                    <UML:TagDefinition xmi.idref = '127-0-1-1--4e75307b:125981f21aa:-8000:0000000000001267'/>
+                  </UML:TaggedValue.type>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1-3e1aac4d:125961f596d:-8000:0000000000000F61'
+                  isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1--7fcce3:125e0cf721b:-8000:00000000000013A3'
+                      language = '' body = 'count($_SESSION[&apos;rfp_hotels&apos;]) &gt; 0'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1-3e1aac4d:125961f596d:-8000:0000000000000F5F'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:000000000000133B'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001341'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '127-0-1-1--213ed12b:125a34f35fe:-8000:0000000000000F84'
+              name = 'method_selected' isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1--213ed12b:125a34f35fe:-8000:0000000000000F85'
+                  isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:00000000000017D9'
+                      language = '' body = '$context-&gt;method'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001349'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '127-0-1-1--213ed12b:125a34f35fe:-8000:0000000000000F81'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001334'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '127-0-1-1-329a32c4:125bc60236f:-8000:0000000000000F8E'
+              name = 'send_to_login' isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1-329a32c4:125bc60236f:-8000:0000000000000FF1'
+                  isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1-329a32c4:125bc60236f:-8000:0000000000001072'
+                      language = '' body = '! Workflow_Condition::isLoggedIn()'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1-70995425:1260027e59f:-8000:0000000000001035'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '127-0-1-1-70995425:1260027e59f:-8000:0000000000001004'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '127-0-1-1--213ed12b:125a34f35fe:-8000:0000000000000FAD'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '127-0-1-1-329a32c4:125bc60236f:-8000:0000000000001040'
+              name = 'to_register' isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1-329a32c4:125bc60236f:-8000:0000000000001041'
+                  isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1--e9f70a5:125d6b4531a:-8000:00000000000017CB'
+                      language = '' body = '$_REQUEST[&apos;f&apos;]==&apos;add&apos;'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001349'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '127-0-1-1--213ed12b:125a34f35fe:-8000:0000000000000FAD'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '127-0-1-1-329a32c4:125bc60236f:-8000:000000000000103F'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '127-0-1-1-329a32c4:125bc60236f:-8000:0000000000001065'
+              name = 'logged_in' isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1-329a32c4:125bc60236f:-8000:0000000000001068'
+                  isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1-329a32c4:125bc60236f:-8000:000000000000106F'
+                      language = '' body = 'true'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1-329a32c4:125bc60236f:-8000:0000000000001066'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '127-0-1-1--213ed12b:125a34f35fe:-8000:0000000000000FAD'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '127-0-1-1--213ed12b:125a34f35fe:-8000:0000000000000F81'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '127-0-1-1-329a32c4:125bc60236f:-8000:0000000000001070'
+              name = 'registered_and_logged_in' isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1-329a32c4:125bc60236f:-8000:0000000000001073'
+                  isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1-329a32c4:125bc60236f:-8000:0000000000001078'
+                      language = '' body = 'true'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1-329a32c4:125bc60236f:-8000:0000000000001066'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '127-0-1-1-329a32c4:125bc60236f:-8000:000000000000103F'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '127-0-1-1--213ed12b:125a34f35fe:-8000:0000000000000F81'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001000'
+              name = 'go_back_1' isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001004'
+                  isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:00000000000010BC'
+                      language = '' body = '$_REQUEST[&apos;back&apos;] == 1'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001174'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000000FFF'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001334'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001001'
+              name = 'back_2' isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:000000000000101D'
+                  isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:00000000000011D6'
+                      language = '' body = 'Workflow_Condition::back(2)'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001349'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:000000000000133F'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000000FFF'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001002'
+              name = 'back_3' isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001038'
+                  isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:000000000000136E'
+                      language = '' body = 'Workflow_Condition::back(3)'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001349'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:000000000000133B'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000000FFF'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001003'
+              name = 'back_4' isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:000000000000104D'
+                  isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001224'
+                      language = '' body = 'Workflow_Condition::back(4)'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001349'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001341'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000000FFF'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:00000000000010BD'
+              name = 'go_back_2' isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:00000000000010BE'
+                  isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:00000000000010D4'
+                      language = '' body = '$_REQUEST[&apos;back&apos;] ==2'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001174'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000000FFF'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:000000000000133F'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:00000000000010D5'
+              name = 'go_back_3' isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:00000000000010D6'
+                  isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:00000000000010F1'
+                      language = '' body = '$_REQUEST[&apos;back&apos;] ==3 '/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001174'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000000FFF'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:000000000000133B'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:00000000000010F2'
+              name = 'go_back_4' isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:00000000000010F3'
+                  isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001134'
+                      language = '' body = '$_REQUEST[&apos;back&apos;] == 4'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001174'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000000FFF'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001341'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001793'
+              name = 'go_to_hotel_detail' isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001794'
+                  name = '' isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001D74'
+                      language = '' body = 'Workflow_Condition::hotel()'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001349'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:000000000000133B'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001792'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001798'
+              name = 'back_to_search' isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001799'
+                  isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001D7A'
+                      language = '' body = '! Workflow_Condition::hotel()'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001349'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001792'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:000000000000133B'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '127-0-1-1--7fcce3:125e0cf721b:-8000:0000000000001342'
+              name = 'hotel_removed' isSpecification = 'false'>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id = '127-0-1-1-70995425:1260027e59f:-8000:0000000000001108'
+                  isSpecification = 'false'>
+                  <UML:TaggedValue.dataValue>A user must have at least on hotel selected for an RFP</UML:TaggedValue.dataValue>
+                  <UML:TaggedValue.type>
+                    <UML:TagDefinition xmi.idref = '127-0-1-1--4e75307b:125981f21aa:-8000:0000000000001267'/>
+                  </UML:TaggedValue.type>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1--7fcce3:125e0cf721b:-8000:0000000000001343'
+                  isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1--7fcce3:125e0cf721b:-8000:0000000000001369'
+                      language = '' body = '!count($_SESSION[&apos;rfp_hotels&apos;])'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1--7fcce3:125e0cf721b:-8000:000000000000136A'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001341'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:000000000000133B'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:000000000000163A'
+              name = 'meeting_with_rfp' isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001643'
+                  isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001CC0'
+                      language = '' body = '$context-&gt;method == &apos;rfp&apos;'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1-53667c43:125e648f310:-8000:00000000000016C6'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001639'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:000000000000133F'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:00000000000016D3'
+              name = 'meeting_with_booking' isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:00000000000016D4'
+                  isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:00000000000016FE'
+                      language = '' body = '$context-&gt;method != &apos;rfp&apos;'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1-53667c43:125e648f310:-8000:00000000000016C6'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001639'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:000000000000133B'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:00000000000017DB'
+              name = 'done_booked' isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:00000000000017DC'
+                  isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1--bd4b199:12610e78e5a:-8000:0000000000000FDD'
+                      language = '' body = 'true'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1--bd4b199:12610e78e5a:-8000:0000000000000FCE'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '127-0-1-1-53667c43:125e648f310:-8000:00000000000017DA'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:FinalState xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001347'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001800'
+              name = 'book_hotel_room' isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001802'
+                  name = 'book_it' isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001D7D'
+                      language = '' body = '$_REQUEST[&apos;state&apos;] == &apos;book_hotel&apos;'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001349'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001792'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '127-0-1-1-53667c43:125e648f310:-8000:00000000000017DA'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001972'
+              name = 'hotel_not_selected' isSpecification = 'false'>
+              <UML:ModelElement.taggedValue>
+                <UML:TaggedValue xmi.id = '127-0-1-1-70995425:1260027e59f:-8000:0000000000001107'
+                  isSpecification = 'false'>
+                  <UML:TaggedValue.dataValue>A user must have a hotel selected to Book</UML:TaggedValue.dataValue>
+                  <UML:TaggedValue.type>
+                    <UML:TagDefinition xmi.idref = '127-0-1-1--4e75307b:125981f21aa:-8000:0000000000001267'/>
+                  </UML:TaggedValue.type>
+                </UML:TaggedValue>
+              </UML:ModelElement.taggedValue>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001973'
+                  isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001DA7'
+                      language = '' body = '! Workflow_Condition::hotel()'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001349'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '127-0-1-1-53667c43:125e648f310:-8000:00000000000017DA'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:000000000000133B'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001DE8'
+              name = 'backto_start' isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001DE9'
+                  isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001E5E'
+                      language = '' body = '$_REQUEST[&apos;back&apos;] == 0'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001174'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000000FFF'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '127-0-1-1--213ed12b:125a34f35fe:-8000:0000000000000F81'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001E18'
+              name = 'back_1' isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001E19'
+                  isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001E1D'
+                      language = '' body = 'Workflow_Condition::back(1)'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001349'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:SimpleState xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001334'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000000FFF'/>
+              </UML:Transition.target>
+            </UML:Transition>
+            <UML:Transition xmi.id = '127-0-1-1-70995425:1260027e59f:-8000:0000000000001005'
+              name = 'load workflow' isSpecification = 'false'>
+              <UML:Transition.guard>
+                <UML:Guard xmi.id = '127-0-1-1-70995425:1260027e59f:-8000:0000000000001006'
+                  isSpecification = 'false'>
+                  <UML:Guard.expression>
+                    <UML:BooleanExpression xmi.id = '127-0-1-1-70995425:1260027e59f:-8000:000000000000100A'
+                      language = '' body = 'true'/>
+                  </UML:Guard.expression>
+                </UML:Guard>
+              </UML:Transition.guard>
+              <UML:Transition.trigger>
+                <UML:SignalEvent xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001349'/>
+              </UML:Transition.trigger>
+              <UML:Transition.source>
+                <UML:Pseudostate xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000000E79'/>
+              </UML:Transition.source>
+              <UML:Transition.target>
+                <UML:SimpleState xmi.idref = '127-0-1-1-70995425:1260027e59f:-8000:0000000000001004'/>
+              </UML:Transition.target>
+            </UML:Transition>
+          </UML:StateMachine.transitions>
+        </UML:StateMachine>
+        <UML:Signal xmi.id = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000000E7D'
+          name = 'CMS_WORKFLOW_INIT' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+          isAbstract = 'false'/>
+        <UML:Comment xmi.id = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001331'
+          isSpecification = 'false' body = '- Meeting Planner Rfp Workflow   -&#10;&#10;* OVERVIEW: Walk a user through booking hotels or requesting an RFP&#10;&#10;* For this workflow the names of the states correspond to &#10;   the name of a template for the &apos;Workflow::LandingPage&apos; tag.&#10;&#10;* Logging out will reset the workflow.&#10;  There is a logout event registered in meetingscentral/events_register.php&#10;&#10;* As a convention states that are not visible on the front are named &apos;_&apos; + name&#10;&#10;* Context-&gt;Stage is used to show progress on the front end.&#10;  Even though there are several states, only 4 &apos;Stages&apos; are shown&#10;  to the End user.&#10;&#10;* The $Context object is available in the Workflow Widget Template.'/>
+        <UML:SignalEvent xmi.id = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001349'
+          name = 'page_load' isSpecification = 'false'>
+          <UML:SignalEvent.signal>
+            <UML:Signal xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000000E7D'/>
+          </UML:SignalEvent.signal>
+        </UML:SignalEvent>
+        <UML:Signal xmi.id = '127-0-1-1--1f4ec60c:1258ebde325:-8000:00000000000014B3'
+          name = 'MODEL_FORM_SAVED_EVENT' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false'/>
+        <UML:SignalEvent xmi.id = '127-0-1-1--7245fb5e:1259301d999:-8000:0000000000001299'
+          name = 'save' isSpecification = 'false'>
+          <UML:SignalEvent.signal>
+            <UML:Signal xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:00000000000014B3'/>
+          </UML:SignalEvent.signal>
+        </UML:SignalEvent>
+        <UML:SignalEvent xmi.id = '127-0-1-1-3e1aac4d:125961f596d:-8000:0000000000000F5F'
+          name = 'hotels_selected' isSpecification = 'false'>
+          <UML:SignalEvent.signal>
+            <UML:Signal xmi.idref = '127-0-1-1-3e1aac4d:125961f596d:-8000:0000000000000F60'/>
+          </UML:SignalEvent.signal>
+        </UML:SignalEvent>
+        <UML:Signal xmi.id = '127-0-1-1-3e1aac4d:125961f596d:-8000:0000000000000F60'
+          name = 'MEETINGSCENTRAL_HOTELS_SELECTED' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false'/>
+        <UML:TagDefinition xmi.id = '127-0-1-1--4e75307b:125981f21aa:-8000:0000000000001267'
+          name = 'documentation' isSpecification = 'false'>
+          <UML:TagDefinition.multiplicity>
+            <UML:Multiplicity xmi.id = '127-0-1-1--4e75307b:125981f21aa:-8000:0000000000001268'>
+              <UML:Multiplicity.range>
+                <UML:MultiplicityRange xmi.id = '127-0-1-1--4e75307b:125981f21aa:-8000:0000000000001269'
+                  lower = '0' upper = '1'/>
+              </UML:Multiplicity.range>
+            </UML:Multiplicity>
+          </UML:TagDefinition.multiplicity>
+        </UML:TagDefinition>
+        <UML:SignalEvent xmi.id = '127-0-1-1-329a32c4:125bc60236f:-8000:0000000000001066'
+          name = 'authenticated' isSpecification = 'false'>
+          <UML:SignalEvent.signal>
+            <UML:Signal xmi.idref = '127-0-1-1-329a32c4:125bc60236f:-8000:0000000000001067'/>
+          </UML:SignalEvent.signal>
+        </UML:SignalEvent>
+        <UML:Signal xmi.id = '127-0-1-1-329a32c4:125bc60236f:-8000:0000000000001067'
+          name = 'USERLOGIN_AUTHENTICATED_EVENT' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false'/>
+        <UML:SignalEvent xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001174'
+          name = 'go_back' isSpecification = 'false'>
+          <UML:SignalEvent.signal>
+            <UML:Signal xmi.idref = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001175'/>
+          </UML:SignalEvent.signal>
+        </UML:SignalEvent>
+        <UML:Signal xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001175'
+          name = 'CMS_WORKFLOW_BACK' isSpecification = 'false' isRoot = 'false' isLeaf = 'false'
+          isAbstract = 'false'/>
+        <UML:SignalEvent xmi.id = '127-0-1-1--7fcce3:125e0cf721b:-8000:000000000000136A'
+          name = 'hotels_removed' isSpecification = 'false'>
+          <UML:SignalEvent.signal>
+            <UML:Signal xmi.idref = '127-0-1-1--7fcce3:125e0cf721b:-8000:000000000000136B'/>
+          </UML:SignalEvent.signal>
+        </UML:SignalEvent>
+        <UML:Signal xmi.id = '127-0-1-1--7fcce3:125e0cf721b:-8000:000000000000136B'
+          name = 'MEETINGSCENTRAL_HOTELS_REMOVED' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false'/>
+        <UML:SignalEvent xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:00000000000016C6'
+          name = 'meeting_selected' isSpecification = 'false'>
+          <UML:SignalEvent.signal>
+            <UML:Signal xmi.idref = '127-0-1-1-53667c43:125e648f310:-8000:00000000000016C7'/>
+          </UML:SignalEvent.signal>
+        </UML:SignalEvent>
+        <UML:Signal xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:00000000000016C7'
+          name = 'MEETINGSCENTRAL_MEETING_SELECTED' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false'/>
+        <UML:Comment xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:00000000000016FF'
+          isSpecification = 'false' body = 'We currently only support 2 /3 methods&#10;&#10;rfp - get quotes,&#10;&#10;one - book one room  &amp; reserver block // not used right now&#10;&#10;all - book all rooms on one card.'>
+          <UML:Comment.annotatedElement>
+            <UML:SimpleState xmi.idref = '127-0-1-1--1f4ec60c:1258ebde325:-8000:000000000000133B'/>
+            <UML:SimpleState xmi.idref = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001639'/>
+          </UML:Comment.annotatedElement>
+        </UML:Comment>
+        <UML:Signal xmi.id = '127-0-1-1-70995425:1260027e59f:-8000:0000000000001034'
+          name = 'MEETINGSCENTRAL_WORKFLOW_LOAD' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false'/>
+        <UML:SignalEvent xmi.id = '127-0-1-1-70995425:1260027e59f:-8000:0000000000001035'
+          name = 'workflow_load' isSpecification = 'false'>
+          <UML:SignalEvent.signal>
+            <UML:Signal xmi.idref = '127-0-1-1-70995425:1260027e59f:-8000:0000000000001034'/>
+          </UML:SignalEvent.signal>
+        </UML:SignalEvent>
+        <UML:Comment xmi.id = '127-0-1-1-70995425:1260027e59f:-8000:000000000000107F'
+          isSpecification = 'false' body = 'We may want to think about reseting the workflow here'/>
+        <UML:Comment xmi.id = '127-0-1-1-70995425:1260027e59f:-8000:0000000000001105'
+          isSpecification = 'false' body = 'Save the method if it is set&#10;and continue.'/>
+        <UML:Comment xmi.id = '127-0-1-1-70995425:1260027e59f:-8000:0000000000001106'
+          isSpecification = 'false' body = 'We only route users back to &#10;states they have already visited.&#10;&#10;This is done by a check on $context-&gt;stage'/>
+        <UML:SignalEvent xmi.id = '127-0-1-1-70995425:1260027e59f:-8000:000000000000110B'
+          name = 'model_form_confirm' isSpecification = 'false'>
+          <UML:SignalEvent.signal>
+            <UML:Signal xmi.idref = '127-0-1-1-70995425:1260027e59f:-8000:000000000000110C'/>
+          </UML:SignalEvent.signal>
+        </UML:SignalEvent>
+        <UML:Signal xmi.id = '127-0-1-1-70995425:1260027e59f:-8000:000000000000110C'
+          name = 'MODEL_FORM_CONFIRM_EVENT' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false'/>
+        <UML:SignalEvent xmi.id = '127-0-1-1--bd4b199:12610e78e5a:-8000:0000000000000FCE'
+          name = 'booked' isSpecification = 'false'>
+          <UML:SignalEvent.signal>
+            <UML:Signal xmi.idref = '127-0-1-1--bd4b199:12610e78e5a:-8000:0000000000000FCF'/>
+          </UML:SignalEvent.signal>
+        </UML:SignalEvent>
+        <UML:Signal xmi.id = '127-0-1-1--bd4b199:12610e78e5a:-8000:0000000000000FCF'
+          name = 'MEETINGSCENTRAL_BOOKED' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false'/>
+        <UML:SignalEvent xmi.id = '127-0-1-1--bd4b199:12610e78e5a:-8000:0000000000000FD0'
+          name = 'rfp_sent' isSpecification = 'false'>
+          <UML:SignalEvent.signal>
+            <UML:Signal xmi.idref = '127-0-1-1--bd4b199:12610e78e5a:-8000:0000000000000FD1'/>
+          </UML:SignalEvent.signal>
+        </UML:SignalEvent>
+        <UML:Signal xmi.id = '127-0-1-1--bd4b199:12610e78e5a:-8000:0000000000000FD1'
+          name = 'MEETINGSCENTRAL_RFP_SENT' isSpecification = 'false' isRoot = 'false'
+          isLeaf = 'false' isAbstract = 'false'/>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:BooleanExpression xmi.id = '127-0-1-1--7245fb5e:1259301d999:-8000:0000000000001298'
+      language = '' body = 'true'/>
+    <UML:BooleanExpression xmi.id = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001371'
+      language = '' body = 'true'/>
+    <UML:BooleanExpression xmi.id = '127-0-1-1--1f4ec60c:1258ebde325:-8000:000000000000137B'
+      language = '' body = 'true'/>
+    <UML:BooleanExpression xmi.id = '127-0-1-1--1f4ec60c:1258ebde325:-8000:00000000000013B5'
+      language = '' body = 'false'/>
+    <UML:BooleanExpression xmi.id = '127-0-1-1--1f4ec60c:1258ebde325:-8000:00000000000013E9'
+      language = '' body = '$_SESSION'/>
+    <UML:BooleanExpression xmi.id = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001409'
+      language = '' body = 'isset($_SESSION[&apos;meeting_id&apos;])'/>
+    <UML:BooleanExpression xmi.id = '127-0-1-1--1f4ec60c:1258ebde325:-8000:00000000000014C0'
+      language = '' body = 'true'/>
+    <UML:BooleanExpression xmi.id = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001526'
+      language = '' body = 'true'/>
+    <UML:BooleanExpression xmi.id = '127-0-1-1--213ed12b:125a34f35fe:-8000:0000000000001060'
+      language = '' body = '$_SESSION[&apos;workflow&apos;][&apos;method&apos;]=&apos;meeting_planner&apos;;'/>
+    <UML:BooleanExpression xmi.id = '127-0-1-1--213ed12b:125a34f35fe:-8000:0000000000001061'
+      language = '' body = '&apos;method&apos;]==&apos;meeting_planner&apos;;'/>
+    <UML:BooleanExpression xmi.id = '127-0-1-1-329a32c4:125bc60236f:-8000:0000000000000FDE'
+      language = '' body = 'Workflow_Condition::isUserAu'/>
+    <UML:BooleanExpression xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:00000000000011A3'
+      language = '' body = 'isset($_REQUEST[&apos;back&apos;]) &amp;&amp; $_REQUEST[&apos;back&apos;] &lt; 2'/>
+    <UML:BooleanExpression xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:00000000000017D1'
+      language = '' body = 'isset($_REQUEST[&apos;list&apos;]) || isset(_'/>
+    <UML:BooleanExpression xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001818'
+      language = '' body = '($_REQUEST[&apos;list&apos;]) || isset($_REQUEST[&apos;state&apos;])'/>
+    <UML:BooleanExpression xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001820'
+      language = '' body = 'ST[&apos;list&apos;]) || isset($_REQUEST[&apos;state&apos;])'/>
+    <UML:BooleanExpression xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001D80'
+      language = '' body = '$_REQUEST[&apos;state&apos;] == &apos;select_hotel&apos;'/>
+    <UML:BooleanExpression xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001E1E'
+      language = '' body = ''/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--1f4ec60c:1258ebde325:-8000:000000000000131E'
+      language = '' body = 'new Workflow_Page(&apos;start'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001522'
+      language = '' body = 'Cms_Workflow_Action:Reload()'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001560'
+      language = '' body = 'Cms_Workflow_Effect::Reload();'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--7245fb5e:1259301d999:-8000:00000000000011DA'
+      language = '' body = '$_SESSION[&apos;step&apos;]=3;'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--7245fb5e:1259301d999:-8000:00000000000011F2'
+      language = '' body = '$_SESSION[&apos;step&apos;]=4;'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1-3e1aac4d:125961f596d:-8000:0000000000000F7D'
+      language = '' body = '$_SESSION[&apos;step&apos;]=2;&#10;Workflow_Action::Reload();'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1-3e1aac4d:125961f596d:-8000:0000000000000FAF'
+      language = '' body = '$_SESSION[&apos;hotel_se[&apos;meeting_id&apos;] = $e-&gt;record-&gt;id;'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1-3e1aac4d:125961f596d:-8000:0000000000000FD3'
+      language = '' body = '$_REQUN[&apos;meeting_id&apos;];'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1-3e1aac4d:125961f596d:-8000:0000000000001001'
+      language = '' body = '$_SESSION[&apos;hotel_search&apos;][&apos;method&apos;] = reN[&apos;meeting_id&apos;];'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1-3e1aac4d:125961f596d:-8000:0000000000001013'
+      language = '' body = '$_SESSION[&apos;hotel_search&apos;][&apos;method&apos;] = rfp;N[&apos;mee'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1-3e1aac4d:125961f596d:-8000:000000000000104A'
+      language = '' body = '$_SESSION[&apos;hotel_search&apos;][&apos;method&apos;] = &apos;rfp&apos;;&#10;$_SESSION[&apos;hotel_search&apos;][&apos;select_'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1-2efcb72e:125967c16be:-8000:0000000000000F7D'
+      language = '' body = 'die(&apos;foo&apos;.$e-&gt;rec&#10;$_SESSION[&apos;hotel_search&apos;][&apos;meeting&apos;] = $e-&gt;record-&gt;id;'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1-2efcb72e:125967c16be:-8000:0000000000000F7E'
+      language = '' body = 'die(&apos;foo&apos;.$e-&gt;reco&#10;$_SESSION[&apos;hotel_search&apos;][&apos;meeting&apos;] = $e-&gt;record-&gt;id;'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--4e75307b:125981f21aa:-8000:0000000000001518'
+      language = '' body = '&#10;&#10;$_SESSION[&apos;hotel_search&apos;][&apos;method&apos;] = &apos;rfp&apos;;&#10;$_SESSION[&apos;hotel_search&apos;][&apos;select_method&apos;]=1;&#10;$_SESSION[&apos;hotel_search&apos;][&apos;numberOfRooms&apos;] = $_SESSION[&apos;current_meeti &#10;Workflow_Action::Reload();&#10;'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--4e75307b:125981f21aa:-8000:0000000000001520'
+      language = '' body = '&#10;&#10;$_SESSION[&apos;hotel_search&apos;][&apos;method&apos;] = &apos;rfp&apos;;&#10;$_SESSION[&apos;hotel_search&apos;][&apos;select_method&apos;]=1;&#10;$_SESSION[&apos;hotel_search&apos;][&apos;numberOfRooms&apos;] = $_SESSION[&apos;current_meeting&apos;][&apos;ro &#10;Workflow_Action::Reload();&#10;'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--4e75307b:125981f21aa:-8000:0000000000001595'
+      language = '' body = '&#10;$_REQUEST[&apos;form_action&apos;] = (isset($_REQUEST[&apos;form_action&apos;])? $_REQUEST'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--4e75307b:125981f21aa:-8000:0000000000001599'
+      language = '' body = '&#10;$_REQUEST[&apos;form_action&apos;] = (isset($_REQUEST[&apos;form_action&apos;])? $_REQ'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--4e75307b:125981f21aa:-8000:000000000000159B'
+      language = '' body = '&#10;$_REQUEST[&apos;form_action&apos;] = (isset($_REQUEST[&apos;form_action&apos;])? $_R'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--4e75307b:125981f21aa:-8000:000000000000159F'
+      language = '' body = '&#10;$_REQUEST[&apos;form_action&apos;] = (isset($_REQUEST[&apos;form_action&apos;])?'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--4e75307b:125981f21aa:-8000:00000000000015A0'
+      language = '' body = '&#10;$_REQUEST[&apos;form_action&apos;] = (isset($_REQUEST[&apos;form_action&apos;])'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--4e75307b:125981f21aa:-8000:00000000000015AA'
+      language = '' body = '&#10;$_REQUEST[&apos;form_action&apos;] = (isset($_REQUEST[&apos;form'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--4e75307b:125981f21aa:-8000:00000000000015B4'
+      language = '' body = '&#10;$_REQUEST[&apos;form_action&apos;] = (isset($_REQ'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--4e75307b:125981f21aa:-8000:00000000000015B8'
+      language = '' body = '&#10;$_REQUEST[&apos;form_action&apos;] = (isset($'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--4e75307b:125981f21aa:-8000:0000000000001B82'
+      language = '' body = '&#10;Workflow_Action::Reload();&#10;'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--4e75307b:125981f21aa:-8000:0000000000001B9A'
+      language = '' body = '&#10;&#10;if(empty($_REQUEST[&apos;form_action&apos;]))&#10;{&#10;$_REQUEST[&apos;form_action&apos;] = &apos;Go&apos;;&#10;$_REQUEST[&apos;method&apos;] = &apos;rfp&apos;;&#10;$_SESSION[&apos;hotel_se[&apos;select_method&apos;]=1;&#10;$_SESSION[&apos;hotel_search&apos;][&apos;numberOfRooms&apos;] = $_SESSION[&apos;current_meeting&apos;][&apos;rooms&apos;]; &#10;}&#10;'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--4e75307b:125981f21aa:-8000:0000000000001BB6'
+      language = '' body = '&#10;&#10;if(empty($_REQUEST[&apos;form_action&apos;]))&#10;{&#10;$_REQUEST[&apos;form_action&apos;] = &apos;Go&apos;;&#10;$_REQUEST[&apos;method&apos;] = &apos;rfp&apos;;&#10;$_REQUEST[&apos;select_method&apos;]=1;&#10;$_SESSION[&apos;hotel_sear[&apos;numberOfRooms&apos;] = $_SESSION[&apos;current_meeting&apos;][&apos;rooms&apos;]; &#10;}&#10;'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--4e75307b:125981f21aa:-8000:0000000000001BB8'
+      language = '' body = '&#10;&#10;if(empty($_REQUEST[&apos;form_action&apos;]))&#10;{&#10;$_REQUEST[&apos;form_action&apos;] = &apos;Go&apos;;&#10;$_REQUEST[&apos;method&apos;] = &apos;rfp&apos;;&#10;$_REQUEST[&apos;select_method&apos;]=1;&#10;$_SESSION[&apos;hotel_se[&apos;numberOfRooms&apos;] = $_SESSION[&apos;current_meeting&apos;][&apos;rooms&apos;]; &#10;}&#10;'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--4e75307b:125981f21aa:-8000:0000000000001BBD'
+      language = '' body = '&#10;&#10;if(empty($_REQUEST[&apos;form_action&apos;]))&#10;{&#10;$_REQUEST[&apos;form_action&apos;] = &apos;Go&apos;;&#10;$_REQUEST[&apos;method&apos;] = &apos;rfp&apos;;&#10;$_REQUEST[&apos;select_method&apos;]=1;&#10;$_SESSION[&apos;hot[&apos;numberOfRooms&apos;] = $_SESSION[&apos;current_meeting&apos;][&apos;rooms&apos;]; &#10;}&#10;'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--4e75307b:125981f21aa:-8000:0000000000001BC3'
+      language = '' body = '&#10;&#10;if(empty($_REQUEST[&apos;form_action&apos;]))&#10;{&#10;$_REQUEST[&apos;form_action&apos;] = &apos;Go&apos;;&#10;$_REQUEST[&apos;method&apos;] = &apos;rfp&apos;;&#10;$_REQUEST[&apos;select_method&apos;]=1;&#10;$_SESSIO[&apos;numberOfRooms&apos;] = $_SESSION[&apos;current_meeting&apos;][&apos;rooms&apos;]; &#10;}&#10;'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--4e75307b:125981f21aa:-8000:0000000000001BC4'
+      language = '' body = '&#10;&#10;if(empty($_REQUEST[&apos;form_action&apos;]))&#10;{&#10;$_REQUEST[&apos;form_action&apos;] = &apos;Go&apos;;&#10;$_REQUEST[&apos;method&apos;] = &apos;rfp&apos;;&#10;$_REQUEST[&apos;select_method&apos;]=1;&#10;$_SESSI[&apos;numberOfRooms&apos;] = $_SESSION[&apos;current_meeting&apos;][&apos;rooms&apos;]; &#10;}&#10;'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--4e75307b:125981f21aa:-8000:0000000000001C75'
+      language = '' body = '&#10;$_SESSI[&apos;method&apos;] = &apos;rfp&apos;;&#10;$_REQUEST[&apos;select_method&apos;]=1;&#10;&#10;Workflow_Action:Reload();&#10;'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--213ed12b:125a34f35fe:-8000:0000000000001025'
+      language = '' body = '&#10;if( isset($_REQUEST[&apos;type&apos;]))&#10;{&#10;$_SESSION[&apos;workflow&apos;][&apos;method&apos;] = $_REQUEST[&apos;type&apos;];&#10;}'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--e9f70a5:125d6b4531a:-8000:000000000000126B'
+      language = '' body = '&#10;$ESSION[&apos;workflow&apos;][&apos;current_meeting&apos;] = $context-&gt;event-&gt;record-&gt;toArray();'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--e9f70a5:125d6b4531a:-8000:000000000000126F'
+      language = '' body = '&#10;$ON[&apos;workflow&apos;][&apos;current_meeting&apos;] = $context-&gt;event-&gt;record-&gt;toArray();'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--e9f70a5:125d6b4531a:-8000:0000000000001273'
+      language = '' body = '&#10;$workflow&apos;][&apos;current_meeting&apos;] = $context-&gt;event-&gt;record-&gt;toArray();'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--e9f70a5:125d6b4531a:-8000:0000000000001297'
+      language = '' body = '&#10;if(empty($_REQUEST[&apos;form_action&apos;]))&#10;{&#10;$_REQUEST[&apos;meeting&apos;] = $[&apos;workflow&apos;][&apos;current_meeting&apos;][&apos;id&apos;];&#10;}&#10;'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--e9f70a5:125d6b4531a:-8000:000000000000129B'
+      language = '' body = '&#10;if(empty($_REQUEST[&apos;form_action&apos;]))&#10;{&#10;$_REQUEST[&apos;meeting&apos;] = $rkflow&apos;][&apos;current_meeting&apos;][&apos;id&apos;];&#10;}&#10;'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--e9f70a5:125d6b4531a:-8000:00000000000012C7'
+      language = '' body = '$context-&gt;cu'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--e9f70a5:125d6b4531a:-8000:00000000000012FA'
+      language = '' body = '$_REQUEST[&apos;id&apos;] = $context-&gt;current_m'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--e9f70a5:125d6b4531a:-8000:00000000000012FE'
+      language = '' body = '$_REQUEST[&apos;id&apos;] = $context-&gt;current_meeti'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--e9f70a5:125d6b4531a:-8000:0000000000001311'
+      language = '' body = '&#10;$_REQUEST[&apos;meetiid&apos;] = $context-&gt;current_meeting[&apos;id&apos;];'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001415'
+      language = '' body = '&#10;$_REQUEST[&apos;back&apos;] = $context-&gt;back;&#10;$cont&#10;Cms_Event_Manager::Raise(&apos;CMS_WORKFLOW_BACK&apos;);'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--31a0c809:125db6163ec:-8000:00000000000016F0'
+      language = '' body = '&#10;Cms_Event_Manager::Raise(&apos;&#10;'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--7fcce3:125e0cf721b:-8000:00000000000010D3'
+      language = '' body = '&#10;$context-&gt;stage = 1;&#10;$context-&gt;stages_dev = &#10;array( &#10;1 =&gt; &apos;Begin the 4 step meeting creation'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--7fcce3:125e0cf721b:-8000:0000000000001125'
+      language = '' body = '&#10;$context-&gt;stage = 1;&#10;$context-&gt;stages_dev = &#10;array( &#10;1 =&gt; &apos;4 Ste'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--7fcce3:125e0cf721b:-8000:00000000000011C9'
+      language = '' body = '&#10;$context-&gt;stage = 1;&#10;$context-&gt;stages_dev = &#10;array( &#10;1 =&gt; &apos;Begin the 4 Step Meeting Creation Wi&apos;);'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--7fcce3:125e0cf721b:-8000:00000000000011DB'
+      language = '' body = '&#10;$context-&gt;stage = 1;&#10;$context-&gt;stages_dev = &#10;array( &#10;1 =&gt; &apos;Begin the 4 Step M&apos;);'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--7fcce3:125e0cf721b:-8000:0000000000001219'
+      language = '' body = '&#10;$context-&gt;stage = 1;&#10;$context-&gt;stages_dev = &#10;array( &#10;1 =&gt; &apos;Start the 4 Step meeting&apos;);'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1--7fcce3:125e0cf721b:-8000:0000000000001241'
+      language = '' body = '&#10;&#10;$context-&gt;stage = 1;&#10;&#10;$context-&gt;stage_def = &#10;array( 1 =&gt; &apos;Start the 4 Step Meeting Process&apos;);'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:00000000000015E0'
+      language = '' body = '&#10;if(empty($_REQUEST[&apos;form_action&apos;]))&#10;{&#10;$_REQUEST[&apos;form_action&apos;] = &apos;Auto&apos;; &#10;}&#10;&#10;$_REQUEST[&apos;method&apos;] = $cont&#10;$_REQUEST[&apos;meeting&apos;] = $context-&gt;current_meeting[&apos;id&apos;];&#10;&#10;'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:000000000000185E'
+      language = '' body = '&#10;$context-&gt;current_meeting = $context-&gt;event-&gt;record-&gt;toArray();&#10;&#10;if($context-&gt;current_meeting[&apos;&#10;&#10;Cms_Event_Manager::Raise(&apos;MEETINGSCENTRAL_MEETING_SELECTED&apos;);&#10;'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001D83'
+      language = '' body = '&apos;state&apos;] == &apos;select_hotel&apos;]+'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001E8C'
+      language = '' body = '&#10;echo &apos;Something'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1-53667c43:125e648f310:-8000:0000000000001E8E'
+      language = '' body = '&#10;echo &apos;Somethi'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1-2977db2f:125fb724905:-8000:00000000000015E3'
+      language = '' body = '&#10;$context-&gt;stage=1;&#10;&#10;$context-&gt;stage_def = array(&#10;1=&gt; &apos;Sign in or register to start theeting Process&apos;,&#10;);'/>
+    <UML:ActionExpression xmi.id = '127-0-1-1-70995425:1260027e59f:-8000:0000000000001075'
+      language = '' body = '&#10;$context-&gt;method=$_REQUEST[&apos;method&apos;];&#10;Cms_Event_Manager::Raise(&apos;MEETINGSCENTRAL_WORKFLO'/>
+  </XMI.content>
+</XMI>
+<pgml description="org.argouml.uml.diagram.state.ui.UMLStateDiagram|127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000000E77"
+      name="workflow"
+>
+  <group name="Fig0"
+       description="org.argouml.uml.diagram.static_structure.ui.FigComment[128, 0, 584, 295]pathVisible=false;stereotypeView=0;"
+       href="127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001331"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig0.0"
+      x="128"
+      y="0"
+      width="584"
+      height="295"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+    />
+    <path name="Fig0.1"
+      description="org.tigris.gef.presentation.FigPoly"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="128"
+              y="0" />
+      <lineto x="701"
+              y="0" />
+      <lineto x="711"
+              y="10" />
+      <lineto x="711"
+              y="294" />
+      <lineto x="128"
+              y="294" />
+      <lineto x="128"
+              y="0" />
+    </path>
+    <path name="Fig0.2"
+      description="org.tigris.gef.presentation.FigPoly"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="701"
+              y="0" />
+      <lineto x="711"
+              y="10" />
+      <lineto x="701"
+              y="10" />
+      <lineto x="701"
+              y="0" />
+    </path>
+    <group name="Fig0.3"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[130, 2, 570, 0]"
+         href="127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001331"
+         fill="0"
+         fillcolor="white"
+         stroke="0"
+         strokecolor="black"
+         visibility="0"
+    >
+      <private>
+      </private>
+      
+      <rectangle name="Fig0.3.0"
+        x="130"
+        y="2"
+        width="570"
+        height="0"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+      />
+    </group>
+    <text name="Fig0.4"
+      x="130"
+      y="2"
+      width="570"
+      height="291"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Left"
+    >- Meeting Planner Rfp Workflow   -
+
+* OVERVIEW: Walk a user through booking hotels or requesting an RFP
+
+* For this workflow the names of the states correspond to 
+   the name of a template for the &apos;Workflow::LandingPage&apos; tag.
+
+* Logging out will reset the workflow.
+  There is a logout event registered in meetingscentral/events_register.php
+
+* As a convention states that are not visible on the front are named &apos;_&apos; + name
+
+* Context-&gt;Stage is used to show progress on the front end.
+  Even though there are several states, only 4 &apos;Stages&apos; are shown
+  to the End user.
+
+* The $Context object is available in the Workflow Widget Template.</text>
+  </group>
+  <group name="Fig1"
+       description="org.argouml.uml.diagram.state.ui.FigInitialState[32, 344, 16, 16]pathVisible=false;stereotypeView=0;"
+       href="127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000000E79"
+       fill="1"
+       fillcolor="black"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <ellipse name="Fig1.0"
+      x="40"
+      y="352"
+      rx="8"
+      ry="8"
+      fill="0"
+      fillcolor="255 0 255"
+      stroke="0"
+      strokecolor="255 0 255"
+    />
+    <ellipse name="Fig1.1"
+      x="40"
+      y="352"
+      rx="8"
+      ry="8"
+      fill="1"
+      fillcolor="black"
+      stroke="1"
+      strokecolor="black"
+    />
+  </group>
+  <group name="Fig2"
+       description="org.argouml.uml.diagram.state.ui.FigSimpleState[1720, 264, 328, 268]pathVisible=false;stereotypeView=0;"
+       href="127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001334"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig2.0"
+      x="1720"
+      y="264"
+      width="328"
+      height="268"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="0"
+      strokecolor="255 0 255"
+      rounding="16"
+    />
+    <rectangle name="Fig2.1"
+      x="1720"
+      y="264"
+      width="328"
+      height="268"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+      rounding="16"
+    />
+    <text name="Fig2.2"
+      x="1722"
+      y="264"
+      width="324"
+      height="22"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >MeetingDetail</text>
+    <path name="Fig2.3"
+      description="org.tigris.gef.presentation.FigLine"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="1720"
+              y="286" />
+      <lineto x="2047"
+              y="286" />
+    </path>
+    <text name="Fig2.4"
+      x="1722"
+      y="286"
+      width="324"
+      height="240"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Left"
+    >entry /
+$context-&gt;stage=1;
+Workflow_Action::Reload();
+
+do /
+if($context-&gt;current_meeting[&apos;id&apos;] &gt; 0)
+{
+$_GET[&apos;f&apos;]=&apos;edit&apos;;
+$_GET[&apos;id&apos;] = $context-&gt;current_meeting[&apos;id&apos;];
+}
+else
+{
+$_GET[&apos;f&apos;]=&apos;add&apos;;
+}</text>
+  </group>
+  <group name="Fig3"
+       description="org.argouml.uml.diagram.state.ui.FigSimpleState[3240, 248, 440, 268]pathVisible=false;stereotypeView=0;"
+       href="127-0-1-1--1f4ec60c:1258ebde325:-8000:000000000000133B"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig3.0"
+      x="3240"
+      y="248"
+      width="440"
+      height="268"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="0"
+      strokecolor="255 0 255"
+      rounding="16"
+    />
+    <rectangle name="Fig3.1"
+      x="3240"
+      y="248"
+      width="440"
+      height="268"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+      rounding="16"
+    />
+    <text name="Fig3.2"
+      x="3242"
+      y="248"
+      width="436"
+      height="22"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >HotelSearch</text>
+    <path name="Fig3.3"
+      description="org.tigris.gef.presentation.FigLine"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="3240"
+              y="270" />
+      <lineto x="3679"
+              y="270" />
+    </path>
+    <text name="Fig3.4"
+      x="3242"
+      y="270"
+      width="436"
+      height="240"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Left"
+    >entry /
+$context-&gt;stage=3;
+Workflow_Action::Reload();
+
+do /
+if(empty($_REQUEST[&apos;form_action&apos;]))
+{
+$_REQUEST[&apos;form_action&apos;] = &apos;Auto&apos;; 
+}
+
+$_REQUEST[&apos;method&apos;] = $context-&gt;method;
+$_REQUEST[&apos;meeting&apos;] = $context-&gt;current_meeting[&apos;id&apos;];
+
+</text>
+  </group>
+  <group name="Fig4"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1--1f4ec60c:1258ebde325:-8000:000000000000133C"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig2"
+      destPortFig="Fig32"
+      sourceFigNode="Fig2"
+      destFigNode="Fig32"
+      <argouml:pathitem figname="Fig4.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1--1f4ec60c:1258ebde325:-8000:000000000000133C"
+                        angle="270.0"
+                        offset="10" />
+    </private>
+    <path name="Fig4.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="1888"
+              y="264" />
+      <lineto x="1888"
+              y="96" />
+      <lineto x="2048"
+              y="96" />
+    </path>
+  </group>
+  <group name="Fig5"
+       description="org.argouml.uml.diagram.state.ui.FigSimpleState[2520, 328, 380, 217]pathVisible=false;stereotypeView=0;"
+       href="127-0-1-1--1f4ec60c:1258ebde325:-8000:000000000000133F"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig5.0"
+      x="2520"
+      y="328"
+      width="380"
+      height="217"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="0"
+      strokecolor="255 0 255"
+      rounding="16"
+    />
+    <rectangle name="Fig5.1"
+      x="2520"
+      y="328"
+      width="380"
+      height="217"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+      rounding="16"
+    />
+    <text name="Fig5.2"
+      x="2522"
+      y="328"
+      width="376"
+      height="22"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >ChangeSchedule</text>
+    <path name="Fig5.3"
+      description="org.tigris.gef.presentation.FigLine"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="2520"
+              y="350" />
+      <lineto x="2899"
+              y="350" />
+    </path>
+    <text name="Fig5.4"
+      x="2522"
+      y="350"
+      width="376"
+      height="189"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Left"
+    >entry /
+$context-&gt;stage=2;
+Workflow_Action::Reload();
+
+do /
+$_GET[&apos;f&apos;]= (empty($_GET[&apos;f&apos;]))? &apos;add&apos; : $_GET[&apos;f&apos;];
+$_REQUEST[&apos;meeting_id&apos;] = $context-&gt;current_meeting[&apos;id&apos;];
+
+model_form_confirm [true] / 
+Workflow_Action::Reload();
+</text>
+  </group>
+  <group name="Fig6"
+       description="org.argouml.uml.diagram.state.ui.FigSimpleState[4104, 304, 192, 88]pathVisible=false;stereotypeView=0;"
+       href="127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001341"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig6.0"
+      x="4104"
+      y="304"
+      width="192"
+      height="88"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="0"
+      strokecolor="255 0 255"
+      rounding="16"
+    />
+    <rectangle name="Fig6.1"
+      x="4104"
+      y="304"
+      width="192"
+      height="88"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+      rounding="16"
+    />
+    <text name="Fig6.2"
+      x="4106"
+      y="304"
+      width="188"
+      height="22"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >SendRfp</text>
+    <path name="Fig6.3"
+      description="org.tigris.gef.presentation.FigLine"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="4104"
+              y="326" />
+      <lineto x="4295"
+              y="326" />
+    </path>
+    <text name="Fig6.4"
+      x="4106"
+      y="326"
+      width="188"
+      height="60"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Left"
+    >entry /
+$context-&gt;stage=4;
+Workflow_Action::Reload();</text>
+  </group>
+  <group name="Fig7"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001342"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig5"
+      destPortFig="Fig3"
+      sourceFigNode="Fig5"
+      destFigNode="Fig3"
+      <argouml:pathitem figname="Fig7.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001342"
+                        angle="270.0"
+                        offset="10" />
+    </private>
+    <path name="Fig7.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="2900"
+              y="392" />
+      <lineto x="3240"
+              y="392" />
+    </path>
+  </group>
+  <group name="Fig8"
+       description="org.argouml.uml.diagram.state.ui.FigFinalState[4656, 224, 24, 24]pathVisible=false;stereotypeView=0;"
+       href="127-0-1-1--1f4ec60c:1258ebde325:-8000:0000000000001347"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <ellipse name="Fig8.0"
+      x="4668"
+      y="236"
+      rx="12"
+      ry="12"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+    />
+    <ellipse name="Fig8.1"
+      x="4668"
+      y="236"
+      rx="12"
+      ry="12"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    />
+    <ellipse name="Fig8.2"
+      x="4667"
+      y="235"
+      rx="7"
+      ry="7"
+      fill="1"
+      fillcolor="black"
+      stroke="0"
+      strokecolor="85 85 170"
+    />
+  </group>
+  <group name="Fig9"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1--1f4ec60c:1258ebde325:-8000:00000000000013A0"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig6.0"
+      destPortFig="Fig8.0"
+      sourceFigNode="Fig6"
+      destFigNode="Fig8"
+      <argouml:pathitem figname="Fig9.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1--1f4ec60c:1258ebde325:-8000:00000000000013A0"
+                        angle="270.0"
+                        offset="10" />
+    </private>
+    <path name="Fig9.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="4296"
+              y="304" />
+      <lineto x="4400"
+              y="256" />
+      <lineto x="4656"
+              y="236" />
+    </path>
+  </group>
+  <group name="Fig10"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1--7245fb5e:1259301d999:-8000:0000000000001292"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig42"
+      destPortFig="Fig12"
+      sourceFigNode="Fig42"
+      destFigNode="Fig12"
+      <argouml:pathitem figname="Fig10.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1--7245fb5e:1259301d999:-8000:0000000000001292"
+                        angle="270.0"
+                        offset="10" />
+    </private>
+    <path name="Fig10.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="598"
+              y="323" />
+      <lineto x="1056"
+              y="323" />
+    </path>
+  </group>
+  <group name="Fig11"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1-3e1aac4d:125961f596d:-8000:0000000000000F5E"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig3.0"
+      destPortFig="Fig6"
+      sourceFigNode="Fig3"
+      destFigNode="Fig6"
+      <argouml:pathitem figname="Fig11.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1-3e1aac4d:125961f596d:-8000:0000000000000F5E"
+                        angle="270.0"
+                        offset="10" />
+    </private>
+    <path name="Fig11.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="3680"
+              y="360" />
+      <lineto x="4104"
+              y="360" />
+    </path>
+  </group>
+  <group name="Fig12"
+       description="org.argouml.uml.diagram.state.ui.FigSimpleState[1056, 296, 344, 319]pathVisible=false;stereotypeView=0;"
+       href="127-0-1-1--213ed12b:125a34f35fe:-8000:0000000000000F81"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig12.0"
+      x="1056"
+      y="296"
+      width="344"
+      height="319"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="0"
+      strokecolor="255 0 255"
+      rounding="16"
+    />
+    <rectangle name="Fig12.1"
+      x="1056"
+      y="296"
+      width="344"
+      height="319"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+      rounding="16"
+    />
+    <text name="Fig12.2"
+      x="1058"
+      y="296"
+      width="340"
+      height="22"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >Start</text>
+    <path name="Fig12.3"
+      description="org.tigris.gef.presentation.FigLine"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="1056"
+              y="318" />
+      <lineto x="1399"
+              y="318" />
+    </path>
+    <text name="Fig12.4"
+      x="1058"
+      y="318"
+      width="340"
+      height="291"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Left"
+    >entry /
+$context-&gt;stage=0;
+
+$context-&gt;stage_def = array(
+          1 =&gt; &apos;Create Your Meeting&apos;,    
+          2 =&gt; &apos;Create Schedule&apos; ,
+          3 =&gt; &apos;Search For Hotels&apos;,
+          4 =&gt; &apos;Book / Request Proposal&apos; ) ;  
+
+Workflow_Action::Reload();
+
+do /
+if(! empty($_GET[&apos;method&apos;]))
+{
+$context-&gt;method = $_GET[&apos;method&apos;];
+}
+</text>
+  </group>
+  <group name="Fig13"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1--213ed12b:125a34f35fe:-8000:0000000000000F84"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig12.0"
+      destPortFig="Fig2.0"
+      sourceFigNode="Fig12"
+      destFigNode="Fig2"
+      <argouml:pathitem figname="Fig13.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1--213ed12b:125a34f35fe:-8000:0000000000000F84"
+                        angle="270.0"
+                        offset="10" />
+    </private>
+    <path name="Fig13.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="1400"
+              y="392" />
+      <lineto x="1720"
+              y="392" />
+    </path>
+  </group>
+  <group name="Fig14"
+       description="org.argouml.uml.diagram.state.ui.FigSimpleState[168, 512, 371, 168]pathVisible=false;stereotypeView=0;"
+       href="127-0-1-1--213ed12b:125a34f35fe:-8000:0000000000000FAD"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig14.0"
+      x="168"
+      y="512"
+      width="371"
+      height="168"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="0"
+      strokecolor="255 0 255"
+      rounding="16"
+    />
+    <rectangle name="Fig14.1"
+      x="168"
+      y="512"
+      width="371"
+      height="168"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+      rounding="16"
+    />
+    <text name="Fig14.2"
+      x="170"
+      y="512"
+      width="367"
+      height="22"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >Login</text>
+    <path name="Fig14.3"
+      description="org.tigris.gef.presentation.FigLine"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="168"
+              y="534" />
+      <lineto x="538"
+              y="534" />
+    </path>
+    <text name="Fig14.4"
+      x="170"
+      y="534"
+      width="367"
+      height="140"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Left"
+    >entry /
+$context-&gt;stage=1;
+
+$context-&gt;stage_def = array(
+1=&gt; &apos;Sign in or Register to Begin Meeting Creation&apos;,
+);</text>
+  </group>
+  <group name="Fig15"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1-329a32c4:125bc60236f:-8000:0000000000000F8E"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig42"
+      destPortFig="Fig14.0"
+      sourceFigNode="Fig42"
+      destFigNode="Fig14"
+      <argouml:pathitem figname="Fig15.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1-329a32c4:125bc60236f:-8000:0000000000000F8E"
+                        angle="270.0"
+                        offset="10" />
+    </private>
+    <path name="Fig15.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="336"
+              y="402" />
+      <lineto x="336"
+              y="512" />
+    </path>
+  </group>
+  <group name="Fig16"
+       description="org.argouml.uml.diagram.state.ui.FigSimpleState[816, 544, 147, 104]pathVisible=false;stereotypeView=0;"
+       href="127-0-1-1-329a32c4:125bc60236f:-8000:000000000000103F"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig16.0"
+      x="816"
+      y="544"
+      width="147"
+      height="104"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="0"
+      strokecolor="255 0 255"
+      rounding="16"
+    />
+    <rectangle name="Fig16.1"
+      x="816"
+      y="544"
+      width="147"
+      height="104"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+      rounding="16"
+    />
+    <text name="Fig16.2"
+      x="818"
+      y="544"
+      width="143"
+      height="22"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >Register</text>
+    <path name="Fig16.3"
+      description="org.tigris.gef.presentation.FigLine"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="816"
+              y="566" />
+      <lineto x="962"
+              y="566" />
+    </path>
+    <text name="Fig16.4"
+      x="818"
+      y="566"
+      width="143"
+      height="76"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Left"
+    >do /
+$_REQUEST[&apos;f&apos;] = &apos;add&apos;;</text>
+  </group>
+  <group name="Fig17"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1-329a32c4:125bc60236f:-8000:0000000000001040"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig14"
+      destPortFig="Fig16"
+      sourceFigNode="Fig14"
+      destFigNode="Fig16"
+      <argouml:pathitem figname="Fig17.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1-329a32c4:125bc60236f:-8000:0000000000001040"
+                        angle="270.0"
+                        offset="10" />
+    </private>
+    <path name="Fig17.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="539"
+              y="592" />
+      <lineto x="816"
+              y="592" />
+    </path>
+  </group>
+  <group name="Fig18"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1-329a32c4:125bc60236f:-8000:0000000000001065"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig14.0"
+      destPortFig="Fig12.0"
+      sourceFigNode="Fig14"
+      destFigNode="Fig12"
+      <argouml:pathitem figname="Fig18.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1-329a32c4:125bc60236f:-8000:0000000000001065"
+                        angle="270.0"
+                        offset="10" />
+    </private>
+    <path name="Fig18.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="539"
+              y="512" />
+      <lineto x="704"
+              y="384" />
+      <lineto x="1056"
+              y="384" />
+    </path>
+  </group>
+  <group name="Fig19"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1-329a32c4:125bc60236f:-8000:0000000000001070"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig16.0"
+      destPortFig="Fig12.0"
+      sourceFigNode="Fig16"
+      destFigNode="Fig12"
+      <argouml:pathitem figname="Fig19.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1-329a32c4:125bc60236f:-8000:0000000000001070"
+                        angle="270.0"
+                        offset="10" />
+    </private>
+    <path name="Fig19.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="936"
+              y="544" />
+      <lineto x="936"
+              y="488" />
+      <lineto x="1000"
+              y="440" />
+      <lineto x="1056"
+              y="440" />
+    </path>
+  </group>
+  <group name="Fig20"
+       description="org.argouml.uml.diagram.state.ui.FigSimpleState[3288, 632, 424, 208]pathVisible=false;stereotypeView=0;"
+       href="127-0-1-1--31a0c809:125db6163ec:-8000:0000000000000FFF"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig20.0"
+      x="3288"
+      y="632"
+      width="424"
+      height="208"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="0"
+      strokecolor="255 0 255"
+      rounding="16"
+    />
+    <rectangle name="Fig20.1"
+      x="3288"
+      y="632"
+      width="424"
+      height="208"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+      rounding="16"
+    />
+    <text name="Fig20.2"
+      x="3290"
+      y="632"
+      width="420"
+      height="22"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >_GoBack</text>
+    <path name="Fig20.3"
+      description="org.tigris.gef.presentation.FigLine"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="3288"
+              y="654" />
+      <lineto x="3711"
+              y="654" />
+    </path>
+    <text name="Fig20.4"
+      x="3290"
+      y="654"
+      width="420"
+      height="180"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Left"
+    >entry /
+Cms_Event_Manager::Raise(&apos;CMS_WORKFLOW_BACK&apos;);
+
+do /
+throw new Cms_Workflow_Exception(&apos;Workflow is stuck on GoBack&apos;);</text>
+  </group>
+  <group name="Fig21"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001000"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig20.0"
+      destPortFig="Fig2.0"
+      sourceFigNode="Fig20"
+      destFigNode="Fig2"
+      <argouml:pathitem figname="Fig21.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001000"
+                        angle="270.0"
+                        offset="10" />
+    </private>
+    <path name="Fig21.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="3288"
+              y="752" />
+      <lineto x="1744"
+              y="752" />
+      <lineto x="1744"
+              y="532" />
+    </path>
+  </group>
+  <group name="Fig22"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001001"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig5.0"
+      destPortFig="Fig20.0"
+      sourceFigNode="Fig5"
+      destFigNode="Fig20"
+      <argouml:pathitem figname="Fig22.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001001"
+                        angle="270.0"
+                        offset="10" />
+    </private>
+    <path name="Fig22.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="2880"
+              y="545" />
+      <lineto x="2880"
+              y="648" />
+      <lineto x="3288"
+              y="648" />
+    </path>
+  </group>
+  <group name="Fig23"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001002"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig3.0"
+      destPortFig="Fig20.0"
+      sourceFigNode="Fig3"
+      destFigNode="Fig20"
+      <argouml:pathitem figname="Fig23.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001002"
+                        angle="270.0"
+                        offset="10" />
+    </private>
+    <path name="Fig23.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="3544"
+              y="516" />
+      <lineto x="3544"
+              y="632" />
+    </path>
+  </group>
+  <group name="Fig24"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001003"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig6.0"
+      destPortFig="Fig20.0"
+      sourceFigNode="Fig6"
+      destFigNode="Fig20"
+      <argouml:pathitem figname="Fig24.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001003"
+                        angle="270.0"
+                        offset="10" />
+    </private>
+    <path name="Fig24.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="4232"
+              y="392" />
+      <lineto x="4232"
+              y="712" />
+      <lineto x="3712"
+              y="712" />
+    </path>
+  </group>
+  <group name="Fig25"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1--31a0c809:125db6163ec:-8000:00000000000010BD"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig20.0"
+      destPortFig="Fig5.0"
+      sourceFigNode="Fig20"
+      destFigNode="Fig5"
+      <argouml:pathitem figname="Fig25.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1--31a0c809:125db6163ec:-8000:00000000000010BD"
+                        angle="270.0"
+                        offset="10" />
+    </private>
+    <path name="Fig25.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="3288"
+              y="680" />
+      <lineto x="2592"
+              y="680" />
+      <lineto x="2592"
+              y="545" />
+    </path>
+  </group>
+  <group name="Fig26"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1--31a0c809:125db6163ec:-8000:00000000000010D5"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig20.0"
+      destPortFig="Fig3.0"
+      sourceFigNode="Fig20"
+      destFigNode="Fig3"
+      <argouml:pathitem figname="Fig26.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1--31a0c809:125db6163ec:-8000:00000000000010D5"
+                        angle="270.0"
+                        offset="10" />
+    </private>
+    <path name="Fig26.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="3376"
+              y="632" />
+      <lineto x="3376"
+              y="516" />
+    </path>
+  </group>
+  <group name="Fig27"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1--31a0c809:125db6163ec:-8000:00000000000010F2"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig20.0"
+      destPortFig="Fig6.0"
+      sourceFigNode="Fig20"
+      destFigNode="Fig6"
+      <argouml:pathitem figname="Fig27.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1--31a0c809:125db6163ec:-8000:00000000000010F2"
+                        angle="270.0"
+                        offset="10" />
+    </private>
+    <path name="Fig27.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="3712"
+              y="648" />
+      <lineto x="4152"
+              y="648" />
+      <lineto x="4152"
+              y="392" />
+    </path>
+  </group>
+  <group name="Fig28"
+       description="org.argouml.uml.diagram.state.ui.FigSimpleState[3280, 24, 328, 80]pathVisible=false;stereotypeView=0;"
+       href="127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001792"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig28.0"
+      x="3280"
+      y="24"
+      width="328"
+      height="80"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="0"
+      strokecolor="255 0 255"
+      rounding="16"
+    />
+    <rectangle name="Fig28.1"
+      x="3280"
+      y="24"
+      width="328"
+      height="80"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+      rounding="16"
+    />
+    <text name="Fig28.2"
+      x="3282"
+      y="24"
+      width="324"
+      height="22"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >HotelDetail</text>
+    <path name="Fig28.3"
+      description="org.tigris.gef.presentation.FigLine"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="3280"
+              y="46" />
+      <lineto x="3607"
+              y="46" />
+    </path>
+    <text name="Fig28.4"
+      x="3282"
+      y="46"
+      width="324"
+      height="52"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Left"
+    ></text>
+  </group>
+  <group name="Fig29"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001793"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig3.0"
+      destPortFig="Fig28.0"
+      sourceFigNode="Fig3"
+      destFigNode="Fig28"
+      <argouml:pathitem figname="Fig29.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001793"
+                        angle="270.0"
+                        offset="10" />
+    </private>
+    <path name="Fig29.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="3320"
+              y="248" />
+      <lineto x="3320"
+              y="104" />
+    </path>
+  </group>
+  <group name="Fig30"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001798"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig28.0"
+      destPortFig="Fig3.0"
+      sourceFigNode="Fig28"
+      destFigNode="Fig3"
+      <argouml:pathitem figname="Fig30.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1--31a0c809:125db6163ec:-8000:0000000000001798"
+                        angle="270.0"
+                        offset="10" />
+    </private>
+    <path name="Fig30.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="3472"
+              y="104" />
+      <lineto x="3472"
+              y="248" />
+    </path>
+  </group>
+  <group name="Fig31"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1--7fcce3:125e0cf721b:-8000:0000000000001342"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig6.0"
+      destPortFig="Fig3.0"
+      sourceFigNode="Fig6"
+      destFigNode="Fig3"
+      <argouml:pathitem figname="Fig31.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1--7fcce3:125e0cf721b:-8000:0000000000001342"
+                        angle="270.0"
+                        offset="10" />
+    </private>
+    <path name="Fig31.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="4104"
+              y="320" />
+      <lineto x="3680"
+              y="320" />
+    </path>
+  </group>
+  <group name="Fig32"
+       description="org.argouml.uml.diagram.state.ui.FigSimpleState[2048, 24, 438, 210]pathVisible=false;stereotypeView=0;"
+       href="127-0-1-1-53667c43:125e648f310:-8000:0000000000001639"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig32.0"
+      x="2048"
+      y="24"
+      width="438"
+      height="210"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="0"
+      strokecolor="255 0 255"
+      rounding="16"
+    />
+    <rectangle name="Fig32.1"
+      x="2048"
+      y="24"
+      width="438"
+      height="210"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+      rounding="16"
+    />
+    <text name="Fig32.2"
+      x="2050"
+      y="24"
+      width="434"
+      height="22"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >_MeetingSelect</text>
+    <path name="Fig32.3"
+      description="org.tigris.gef.presentation.FigLine"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="2048"
+              y="46" />
+      <lineto x="2485"
+              y="46" />
+    </path>
+    <text name="Fig32.4"
+      x="2050"
+      y="46"
+      width="434"
+      height="182"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Left"
+    >entry /
+$context-&gt;current_meeting = $context-&gt;event-&gt;record-&gt;toArray();
+
+if($context-&gt;current_meeting[&apos;rooms&apos;] &gt; 22)
+{
+$context-&gt;method=&apos;rfp&apos;;
+}
+
+Cms_Event_Manager::Raise(&apos;MEETINGSCENTRAL_MEETING_SELECTED&apos;);</text>
+  </group>
+  <group name="Fig33"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1-53667c43:125e648f310:-8000:000000000000163A"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig32.0"
+      destPortFig="Fig5.0"
+      sourceFigNode="Fig32"
+      destFigNode="Fig5"
+      <argouml:pathitem figname="Fig33.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1-53667c43:125e648f310:-8000:000000000000163A"
+                        angle="270.0"
+                        offset="10" />
+    </private>
+    <path name="Fig33.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="2168"
+              y="234" />
+      <lineto x="2168"
+              y="360" />
+      <lineto x="2520"
+              y="360" />
+    </path>
+  </group>
+  <group name="Fig34"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1-53667c43:125e648f310:-8000:00000000000016D3"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig32.0"
+      destPortFig="Fig3.0"
+      sourceFigNode="Fig32"
+      destFigNode="Fig3"
+      <argouml:pathitem figname="Fig34.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1-53667c43:125e648f310:-8000:00000000000016D3"
+                        angle="270.0"
+                        offset="10" />
+    </private>
+    <path name="Fig34.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="2312"
+              y="234" />
+      <lineto x="2312"
+              y="288" />
+      <lineto x="3240"
+              y="288" />
+    </path>
+  </group>
+  <group name="Fig35"
+       description="org.argouml.uml.diagram.static_structure.ui.FigComment[2512, 40, 392, 184]pathVisible=false;stereotypeView=0;"
+       href="127-0-1-1-53667c43:125e648f310:-8000:00000000000016FF"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig35.0"
+      x="2512"
+      y="40"
+      width="392"
+      height="184"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+    />
+    <path name="Fig35.1"
+      description="org.tigris.gef.presentation.FigPoly"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="2512"
+              y="40" />
+      <lineto x="2893"
+              y="40" />
+      <lineto x="2903"
+              y="50" />
+      <lineto x="2903"
+              y="223" />
+      <lineto x="2512"
+              y="223" />
+      <lineto x="2512"
+              y="40" />
+    </path>
+    <path name="Fig35.2"
+      description="org.tigris.gef.presentation.FigPoly"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="2893"
+              y="40" />
+      <lineto x="2903"
+              y="50" />
+      <lineto x="2893"
+              y="50" />
+      <lineto x="2893"
+              y="40" />
+    </path>
+    <group name="Fig35.3"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[2514, 42, 378, 0]"
+         href="127-0-1-1-53667c43:125e648f310:-8000:00000000000016FF"
+         fill="0"
+         fillcolor="white"
+         stroke="0"
+         strokecolor="black"
+         visibility="0"
+    >
+      <private>
+      </private>
+      
+      <rectangle name="Fig35.3.0"
+        x="2514"
+        y="42"
+        width="378"
+        height="0"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+      />
+    </group>
+    <text name="Fig35.4"
+      x="2514"
+      y="42"
+      width="378"
+      height="180"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Left"
+    >We currently only support 2 /3 methods
+
+rfp - get quotes,
+
+one - book one room  &amp; reserver block // not used right now
+
+all - book all rooms on one card.</text>
+  </group>
+  <group name="Fig36"
+       description="org.argouml.uml.diagram.state.ui.FigSimpleState[4104, 72, 192, 88]pathVisible=false;stereotypeView=0;"
+       href="127-0-1-1-53667c43:125e648f310:-8000:00000000000017DA"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig36.0"
+      x="4104"
+      y="72"
+      width="192"
+      height="88"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="0"
+      strokecolor="255 0 255"
+      rounding="16"
+    />
+    <rectangle name="Fig36.1"
+      x="4104"
+      y="72"
+      width="192"
+      height="88"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+      rounding="16"
+    />
+    <text name="Fig36.2"
+      x="4106"
+      y="72"
+      width="188"
+      height="22"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >BookHotel</text>
+    <path name="Fig36.3"
+      description="org.tigris.gef.presentation.FigLine"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="4104"
+              y="94" />
+      <lineto x="4295"
+              y="94" />
+    </path>
+    <text name="Fig36.4"
+      x="4106"
+      y="94"
+      width="188"
+      height="60"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Left"
+    >entry /
+$context-&gt;stage=4;</text>
+  </group>
+  <group name="Fig37"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1-53667c43:125e648f310:-8000:00000000000017DB"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig36.0"
+      destPortFig="Fig8.0"
+      sourceFigNode="Fig36"
+      destFigNode="Fig8"
+      <argouml:pathitem figname="Fig37.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1-53667c43:125e648f310:-8000:00000000000017DB"
+                        angle="270.0"
+                        offset="10" />
+    </private>
+    <path name="Fig37.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="4296"
+              y="160" />
+      <lineto x="4400"
+              y="200" />
+      <lineto x="4656"
+              y="234" />
+    </path>
+  </group>
+  <group name="Fig38"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1-53667c43:125e648f310:-8000:0000000000001800"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig28.0"
+      destPortFig="Fig36.0"
+      sourceFigNode="Fig28"
+      destFigNode="Fig36"
+      <argouml:pathitem figname="Fig38.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1-53667c43:125e648f310:-8000:0000000000001800"
+                        angle="270.0"
+                        offset="10" />
+    </private>
+    <path name="Fig38.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="3608"
+              y="72" />
+      <lineto x="4104"
+              y="72" />
+    </path>
+  </group>
+  <group name="Fig39"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1-53667c43:125e648f310:-8000:0000000000001972"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig36.0"
+      destPortFig="Fig3.0"
+      sourceFigNode="Fig36"
+      destFigNode="Fig3"
+      <argouml:pathitem figname="Fig39.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1-53667c43:125e648f310:-8000:0000000000001972"
+                        angle="270.0"
+                        offset="10" />
+    </private>
+    <path name="Fig39.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="4104"
+              y="160" />
+      <lineto x="3680"
+              y="248" />
+    </path>
+  </group>
+  <group name="Fig40"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1-53667c43:125e648f310:-8000:0000000000001DE8"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig20.0"
+      destPortFig="Fig12.0"
+      sourceFigNode="Fig20"
+      destFigNode="Fig12"
+      <argouml:pathitem figname="Fig40.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1-53667c43:125e648f310:-8000:0000000000001DE8"
+                        angle="270.0"
+                        offset="10" />
+    </private>
+    <path name="Fig40.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="3288"
+              y="808" />
+      <lineto x="1744"
+              y="808" />
+      <lineto x="1400"
+              y="615" />
+    </path>
+  </group>
+  <group name="Fig41"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1-53667c43:125e648f310:-8000:0000000000001E18"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig2.0"
+      destPortFig="Fig20"
+      sourceFigNode="Fig2"
+      destFigNode="Fig20"
+      <argouml:pathitem figname="Fig41.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1-53667c43:125e648f310:-8000:0000000000001E18"
+                        angle="270.0"
+                        offset="10" />
+    </private>
+    <path name="Fig41.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="1800"
+              y="532" />
+      <lineto x="1800"
+              y="704" />
+      <lineto x="3288"
+              y="704" />
+    </path>
+  </group>
+  <group name="Fig42"
+       description="org.argouml.uml.diagram.state.ui.FigSimpleState[176, 304, 422, 98]pathVisible=false;stereotypeView=0;"
+       href="127-0-1-1-70995425:1260027e59f:-8000:0000000000001004"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig42.0"
+      x="176"
+      y="304"
+      width="422"
+      height="98"
+      fill="1"
+      fillcolor="255 0 255"
+      stroke="0"
+      strokecolor="255 0 255"
+      rounding="16"
+    />
+    <rectangle name="Fig42.1"
+      x="176"
+      y="304"
+      width="422"
+      height="98"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+      rounding="16"
+    />
+    <text name="Fig42.2"
+      x="178"
+      y="304"
+      width="418"
+      height="22"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Center"
+    >_Load</text>
+    <path name="Fig42.3"
+      description="org.tigris.gef.presentation.FigLine"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="176"
+              y="326" />
+      <lineto x="597"
+              y="326" />
+    </path>
+    <text name="Fig42.4"
+      x="178"
+      y="326"
+      width="418"
+      height="70"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Left"
+    >entry /
+$context-&gt;method=$_GET[&apos;method&apos;];
+
+Cms_Event_Manager::Raise(&apos;MEETINGSCENTRAL_WORKFLOW_LOAD&apos;);</text>
+  </group>
+  <group name="Fig43"
+       description="org.argouml.uml.diagram.state.ui.FigTransition"
+       href="127-0-1-1-70995425:1260027e59f:-8000:0000000000001005"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+      sourcePortFig="Fig1.0"
+      destPortFig="Fig42.0"
+      sourceFigNode="Fig1"
+      destFigNode="Fig42"
+      <argouml:pathitem figname="Fig43.1"
+                        classname="org.argouml.uml.diagram.ui.PathItemPlacement"
+                        figclassname="org.argouml.uml.diagram.ui.FigNameWithAbstract"
+                        ownerhref="127-0-1-1-70995425:1260027e59f:-8000:0000000000001005"
+                        angle="270.0"
+                        offset="10" />
+    </private>
+    <path name="Fig43.0"
+      description="org.argouml.gefext.ArgoFigPoly"
+      fill="0"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="47"
+              y="352" />
+      <lineto x="176"
+              y="352" />
+    </path>
+  </group>
+  <group name="Fig44"
+       description="org.argouml.uml.diagram.static_structure.ui.FigComment[4456, 264, 362, 56]pathVisible=false;stereotypeView=0;"
+       href="127-0-1-1-70995425:1260027e59f:-8000:000000000000107F"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig44.0"
+      x="4456"
+      y="264"
+      width="362"
+      height="56"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+    />
+    <path name="Fig44.1"
+      description="org.tigris.gef.presentation.FigPoly"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="4456"
+              y="264" />
+      <lineto x="4807"
+              y="264" />
+      <lineto x="4817"
+              y="274" />
+      <lineto x="4817"
+              y="319" />
+      <lineto x="4456"
+              y="319" />
+      <lineto x="4456"
+              y="264" />
+    </path>
+    <path name="Fig44.2"
+      description="org.tigris.gef.presentation.FigPoly"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="4807"
+              y="264" />
+      <lineto x="4817"
+              y="274" />
+      <lineto x="4807"
+              y="274" />
+      <lineto x="4807"
+              y="264" />
+    </path>
+    <group name="Fig44.3"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[4458, 266, 348, 0]"
+         href="127-0-1-1-70995425:1260027e59f:-8000:000000000000107F"
+         fill="0"
+         fillcolor="white"
+         stroke="0"
+         strokecolor="black"
+         visibility="0"
+    >
+      <private>
+      </private>
+      
+      <rectangle name="Fig44.3.0"
+        x="4458"
+        y="266"
+        width="348"
+        height="0"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+      />
+    </group>
+    <text name="Fig44.4"
+      x="4458"
+      y="266"
+      width="348"
+      height="52"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Left"
+    >We may want to think about reseting the workflow here</text>
+  </group>
+  <group name="Fig45"
+       description="org.argouml.uml.diagram.static_structure.ui.FigComment[376, 424, 208, 40]pathVisible=false;stereotypeView=0;"
+       href="127-0-1-1-70995425:1260027e59f:-8000:0000000000001105"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig45.0"
+      x="376"
+      y="424"
+      width="208"
+      height="40"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+    />
+    <path name="Fig45.1"
+      description="org.tigris.gef.presentation.FigPoly"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="376"
+              y="424" />
+      <lineto x="573"
+              y="424" />
+      <lineto x="583"
+              y="434" />
+      <lineto x="583"
+              y="463" />
+      <lineto x="376"
+              y="463" />
+      <lineto x="376"
+              y="424" />
+    </path>
+    <path name="Fig45.2"
+      description="org.tigris.gef.presentation.FigPoly"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="573"
+              y="424" />
+      <lineto x="583"
+              y="434" />
+      <lineto x="573"
+              y="434" />
+      <lineto x="573"
+              y="424" />
+    </path>
+    <group name="Fig45.3"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[378, 426, 194, 0]"
+         href="127-0-1-1-70995425:1260027e59f:-8000:0000000000001105"
+         fill="0"
+         fillcolor="white"
+         stroke="0"
+         strokecolor="black"
+         visibility="0"
+    >
+      <private>
+      </private>
+      
+      <rectangle name="Fig45.3.0"
+        x="378"
+        y="426"
+        width="194"
+        height="0"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+      />
+    </group>
+    <text name="Fig45.4"
+      x="378"
+      y="426"
+      width="194"
+      height="36"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Left"
+    >Save the method if it is set
+and continue.</text>
+  </group>
+  <group name="Fig46"
+       description="org.argouml.uml.diagram.static_structure.ui.FigComment[3728, 728, 291, 74]pathVisible=false;stereotypeView=0;"
+       href="127-0-1-1-70995425:1260027e59f:-8000:0000000000001106"
+       fill="1"
+       fillcolor="white"
+       stroke="1"
+       strokecolor="black"
+  >
+    <private>
+    </private>
+    
+    <rectangle name="Fig46.0"
+      x="3728"
+      y="728"
+      width="291"
+      height="74"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+    />
+    <path name="Fig46.1"
+      description="org.tigris.gef.presentation.FigPoly"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="3728"
+              y="728" />
+      <lineto x="4008"
+              y="728" />
+      <lineto x="4018"
+              y="738" />
+      <lineto x="4018"
+              y="801" />
+      <lineto x="3728"
+              y="801" />
+      <lineto x="3728"
+              y="728" />
+    </path>
+    <path name="Fig46.2"
+      description="org.tigris.gef.presentation.FigPoly"
+      fill="1"
+      fillcolor="white"
+      stroke="1"
+      strokecolor="black"
+    >
+      <moveto x="4008"
+              y="728" />
+      <lineto x="4018"
+              y="738" />
+      <lineto x="4008"
+              y="738" />
+      <lineto x="4008"
+              y="728" />
+    </path>
+    <group name="Fig46.3"
+         description="org.argouml.uml.diagram.ui.FigStereotypesGroup[3730, 730, 277, 0]"
+         href="127-0-1-1-70995425:1260027e59f:-8000:0000000000001106"
+         fill="0"
+         fillcolor="white"
+         stroke="0"
+         strokecolor="black"
+         visibility="0"
+    >
+      <private>
+      </private>
+      
+      <rectangle name="Fig46.3.0"
+        x="3730"
+        y="730"
+        width="277"
+        height="0"
+        fill="0"
+        fillcolor="white"
+        stroke="0"
+        strokecolor="black"
+      />
+    </group>
+    <text name="Fig46.4"
+      x="3730"
+      y="730"
+      width="277"
+      height="70"
+      fill="0"
+      fillcolor="white"
+      stroke="0"
+      strokecolor="black"
+      textcolor="black"
+      font="Dialog"
+      italic="false"
+      bold="false"
+      textsize="12"
+      justification="Left"
+    >We only route users back to 
+states they have already visited.
+
+This is done by a check on $context-&gt;stage</text>
+  </group>
+</pgml>
+<todo>
+<todolist>
+</todolist>
+<resolvedcritics>
+</resolvedcritics>
+</todo>
+</uml>

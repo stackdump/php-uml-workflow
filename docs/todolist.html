@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos  -->
+			<title>Todo List</title>
+			<link rel="stylesheet" href="media/stylesheet.css" />
+											</head>
+		<body>
+						<div align="center"><h1>Todo List</h1></div>
+<h2>Cms</h2>
+<h3><a href="Cms/Workflow/Cms_Workflow_Config.html">Cms_Workflow_Config</a></h3>
+<ul>
+    <li>add more links to document the UML state diagram conventions   also it may be nice to parse the document to get state info using xpath and a dom parser instead of   converting the whole thing to an array</li>
+</ul>
+<h3><a href="Cms/Workflow/Cms_Workflow_Config.html#methodgetNodes">Cms_Workflow_Config::getNodes()</a></h3>
+<ul>
+    <li>Add the other actions - instead of having everything be a CallAction type</li>
+    <li>allow for the Exit Action</li>
+</ul>
+<h3><a href="Cms/Tests/TestWorkflows.html#methodTestAutoWorkflow">TestWorkflows::TestAutoWorkflow()</a></h3>
+<ul>
+    <li>finish testint the workflow object with serialization</li>
+</ul>
+<h3><a href="Cms/Workflow/Cms_Workflow_Factory.html#methodWorkflow">Cms_Workflow_Factory::Workflow()</a></h3>
+<ul>
+    <li>add config caching here using var_export we don't want to have to parse the UML every time</li>
+</ul>
+<h3><a href="Cms/Tests/TestWorkflows.html#method_TestRfpWorkflow">TestWorkflows::_TestRfpWorkflow()</a></h3>
+<ul>
+    <li><p>we should be able to save the workflow config as php instead of parsing every time  update the workflow class to do this</p><p>EXAMPLE:  $workflow_config =  new Cms_Workflow_Config(SITE_ROOT_CUSTOM.'/lib/Workflow/Rfp/config.uml');  var_export($workflow_config);die; -- should save this output to a file</p></li>
+</ul>
+<h3><a href="Cms/Workflow/Cms_Workflow.html#method__construct">Cms_Workflow::__construct()</a></h3>
+<ul>
+    <li>eventually transitions should be registered on wakeup as well</li>
+</ul>
+<h3><a href="Cms/Workflow/Cms_Workflow.html#method__wakeup">Cms_Workflow::__wakeup()</a></h3>
+<ul>
+    <li>update this method to  re-register all of the transition events as event handlers</li>
+</ul>
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 27 Jan 2011 11:48:57 -0800 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</body>
+</html>

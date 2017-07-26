@@ -1,0 +1,1046 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos  -->
+			<title>Docs For Class Cms_Workflow_Node</title>
+			<link rel="stylesheet" href="../../media/stylesheet.css" />
+						<script src="../../media/lib/classTree.js"></script>
+												<script language="javascript" type="text/javascript">
+				var imgPlus = new Image();
+				var imgMinus = new Image();
+				imgPlus.src = "../../media/images/plus.png";
+				imgMinus.src = "../../media/images/minus.png";
+				
+				function showNode(Node){
+							switch(navigator.family){
+								case 'nn4':
+									// Nav 4.x code fork...
+							var oTable = document.layers["span" + Node];
+							var oImg = document.layers["img" + Node];
+									break;
+								case 'ie4':
+									// IE 4/5 code fork...
+							var oTable = document.all["span" + Node];
+							var oImg = document.all["img" + Node];
+									break;
+								case 'gecko':
+									// Standards Compliant code fork...
+							var oTable = document.getElementById("span" + Node);
+							var oImg = document.getElementById("img" + Node);
+									break;
+							}
+					oImg.src = imgMinus.src;
+					oTable.style.display = "block";
+				}
+				
+				function hideNode(Node){
+							switch(navigator.family){
+								case 'nn4':
+									// Nav 4.x code fork...
+							var oTable = document.layers["span" + Node];
+							var oImg = document.layers["img" + Node];
+									break;
+								case 'ie4':
+									// IE 4/5 code fork...
+							var oTable = document.all["span" + Node];
+							var oImg = document.all["img" + Node];
+									break;
+								case 'gecko':
+									// Standards Compliant code fork...
+							var oTable = document.getElementById("span" + Node);
+							var oImg = document.getElementById("img" + Node);
+									break;
+							}
+					oImg.src = imgPlus.src;
+					oTable.style.display = "none";
+				}
+				
+				function nodeIsVisible(Node){
+							switch(navigator.family){
+								case 'nn4':
+									// Nav 4.x code fork...
+							var oTable = document.layers["span" + Node];
+									break;
+								case 'ie4':
+									// IE 4/5 code fork...
+							var oTable = document.all["span" + Node];
+									break;
+								case 'gecko':
+									// Standards Compliant code fork...
+							var oTable = document.getElementById("span" + Node);
+									break;
+							}
+					return (oTable && oTable.style.display == "block");
+				}
+				
+				function toggleNodeVisibility(Node){
+					if (nodeIsVisible(Node)){
+						hideNode(Node);
+					}else{
+						showNode(Node);
+					}
+				}
+			</script>
+					</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name"><img src="../../media/images/Class_logo.png"
+														alt=" Class"
+														title=" Class"
+														style="vertical-align: middle"> Cms_Workflow_Node</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+                <p class="implements">
+            Implements interfaces:
+            <ul>
+                <li><a href="../../Cms/Workflow/Cms_Workflow_Node_Interface.html">Cms_Workflow_Node_Interface</a></li>            </ul>
+        </p>
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Cms_Workflow_Node</p>
+		<p class="notes">
+			Located in <a class="field" href="_code---Workflow---Node.php.html">/code/Workflow/Node.php</a> (line <span class="field"><a href="../../__filesource/fsource_Cms_Workflow_codeWorkflowNode.php.html#a9">9</a></span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																																																								<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$class_name" title="details" class="var-name">$class_name</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$doActivity" title="details" class="var-name">$doActivity</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$entry" title="details" class="var-name">$entry</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$id" title="details" class="var-name">$id</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$incoming" title="details" class="var-name">$incoming</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$isFirstNode" title="details" class="var-name">$isFirstNode</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$isLastNode" title="details" class="var-name">$isLastNode</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/Variable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$method_name" title="details" class="var-name">$method_name</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$name" title="details" class="var-name">$name</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$outgoing" title="details" class="var-name">$outgoing</a>
+				</div>
+																<div class="var-title">
+					<img src="../../media/images/PrivateVariable.png" alt=" " />
+					<span class="var-type">mixed</span>
+					<a href="#$workflow" title="details" class="var-name">$workflow</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																															
+				<div class="method-definition">
+					<img src="../../media/images/Constructor.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$meta</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#addInTransition" title="details" class="method-name">addInTransition</a>
+											(<span class="var-type"><a href="../../Cms/Workflow/Cms_Workflow_Transition.html">Cms_Workflow_Transition</a></span>&nbsp;<span class="var-name">&$transition</span>, <span class="var-type"><a href="../../Cms/Workflow/Cms_Workflow_Transition.html">Cms_Workflow_Transition</a></span>&nbsp;<span class="var-name">$transition</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#addOutTransition" title="details" class="method-name">addOutTransition</a>
+											(<span class="var-type"><a href="../../Cms/Workflow/Cms_Workflow_Transition.html">Cms_Workflow_Transition</a></span>&nbsp;<span class="var-name">&$transition</span>, <span class="var-type"><a href="../../Cms/Workflow/Cms_Workflow_Transition.html">Cms_Workflow_Transition</a></span>&nbsp;<span class="var-name">$transition</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#doActivity" title="details" class="method-name">doActivity</a>
+										()
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#entry" title="details" class="method-name">entry</a>
+										()
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#getOutTransition" title="details" class="method-name">getOutTransition</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$transitionId</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#isCurrentState" title="details" class="method-name">isCurrentState</a>
+										()
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setDoActivity" title="details" class="method-name">setDoActivity</a>
+											(<span class="var-type"><a href="../../Cms/Workflow/Cms_Workflow_Action.html">Cms_Workflow_Action</a></span>&nbsp;<span class="var-name">&$action</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setEntry" title="details" class="method-name">setEntry</a>
+											(<span class="var-type"><a href="../../Cms/Workflow/Cms_Workflow_Action.html">Cms_Workflow_Action</a></span>&nbsp;<span class="var-name">&$action</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#setWorkflow" title="details" class="method-name">setWorkflow</a>
+											(<span class="var-type"><a href="../../Cms/Workflow/Cms_Workflow.html">Cms_Workflow</a></span>&nbsp;<span class="var-name">&$wf</span>, <span class="var-type"><a href="../../Cms/Workflow/Cms_Workflow.html">Cms_Workflow</a></span>&nbsp;<span class="var-name">$wf</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_addTransition" title="details" class="method-name">_addTransition</a>
+											(<span class="var-type"><a href="../../Cms/Workflow/Cms_Workflow_Transition.html">Cms_Workflow_Transition</a></span>&nbsp;<span class="var-name">&$transition</span>, <span class="var-type"><a href="../../Cms/Workflow/Cms_Workflow_Transition.html">Cms_Workflow_Transition</a></span>&nbsp;<span class="var-name">$transition</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/PrivateMethod.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#_doAction" title="details" class="method-name">_doAction</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$action_name</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#__get" title="details" class="method-name">__get</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$name</span>)
+									</div>
+															
+				<div class="method-definition">
+					<img src="../../media/images/Method.png" alt=" "/>
+											<span class="method-result">void</span>
+										<a href="#__set" title="details" class="method-name">__set</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$value</span>)
+									</div>
+											</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			
+<a name="var$class_name" id="$class_name"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$class_name</span>
+						(line <span class="line-number"><a href="../../__filesource/fsource_Cms_Workflow_codeWorkflowNode.php.html#a26">26</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$doActivity" id="$doActivity"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$doActivity</span>
+						(line <span class="line-number"><a href="../../__filesource/fsource_Cms_Workflow_codeWorkflowNode.php.html#a23">23</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$entry" id="$entry"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$entry</span>
+						(line <span class="line-number"><a href="../../__filesource/fsource_Cms_Workflow_codeWorkflowNode.php.html#a22">22</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$id" id="$id"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$id</span>
+						(line <span class="line-number"><a href="../../__filesource/fsource_Cms_Workflow_codeWorkflowNode.php.html#a11">11</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$incoming" id="$incoming"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$incoming</span>
+						(line <span class="line-number"><a href="../../__filesource/fsource_Cms_Workflow_codeWorkflowNode.php.html#a20">20</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$isFirstNode" id="$isFirstNode"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$isFirstNode</span>
+						(line <span class="line-number"><a href="../../__filesource/fsource_Cms_Workflow_codeWorkflowNode.php.html#a16">16</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$isLastNode" id="$isLastNode"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$isLastNode</span>
+						(line <span class="line-number"><a href="../../__filesource/fsource_Cms_Workflow_codeWorkflowNode.php.html#a17">17</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$method_name" id="$method_name"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/Variable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$method_name</span>
+						(line <span class="line-number"><a href="../../__filesource/fsource_Cms_Workflow_codeWorkflowNode.php.html#a25">25</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$name" id="$name"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$name</span>
+						(line <span class="line-number"><a href="../../__filesource/fsource_Cms_Workflow_codeWorkflowNode.php.html#a12">12</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$outgoing" id="$outgoing"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<img src="../../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$outgoing</span>
+						(line <span class="line-number"><a href="../../__filesource/fsource_Cms_Workflow_codeWorkflowNode.php.html#a19">19</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$workflow" id="$workflow"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<img src="../../media/images/PrivateVariable.png" />
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$workflow</span>
+						(line <span class="line-number"><a href="../../__filesource/fsource_Cms_Workflow_codeWorkflowNode.php.html#a14">14</a></span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Constructor.png" />
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../../__filesource/fsource_Cms_Workflow_codeWorkflowNode.php.html#a34">34</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">__construct</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			__construct
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$meta</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$meta</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddInTransition" id="addInTransition"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">addInTransition</span> (line <span class="line-number"><a href="../../__filesource/fsource_Cms_Workflow_codeWorkflowNode.php.html#a117">117</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">addInTransition add incoming transition</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addInTransition
+		</span>
+					(<span class="var-type"><a href="../../Cms/Workflow/Cms_Workflow_Transition.html">Cms_Workflow_Transition</a></span>&nbsp;<span class="var-name">&$transition</span>, <span class="var-type"><a href="../../Cms/Workflow/Cms_Workflow_Transition.html">Cms_Workflow_Transition</a></span>&nbsp;<span class="var-name">$transition</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../Cms/Workflow/Cms_Workflow_Transition.html">Cms_Workflow_Transition</a></span>
+				<span class="var-name">$transition</span>			</li>
+					<li>
+				<span class="var-type"><a href="../../Cms/Workflow/Cms_Workflow_Transition.html">Cms_Workflow_Transition</a></span>
+				<span class="var-name">&$transition</span>			</li>
+				</ul>
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Cms/Workflow/Cms_Workflow_Node_Interface.html#methodaddInTransition">Cms_Workflow_Node_Interface::addInTransition()</a></dt>
+						<dd>addInTransition add incoming transition</dd>
+					</dl>
+			
+	</div>
+<a name="methodaddOutTransition" id="addOutTransition"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">addOutTransition</span> (line <span class="line-number"><a href="../../__filesource/fsource_Cms_Workflow_codeWorkflowNode.php.html#a105">105</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">addOutTransition add outgoing transition</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addOutTransition
+		</span>
+					(<span class="var-type"><a href="../../Cms/Workflow/Cms_Workflow_Transition.html">Cms_Workflow_Transition</a></span>&nbsp;<span class="var-name">&$transition</span>, <span class="var-type"><a href="../../Cms/Workflow/Cms_Workflow_Transition.html">Cms_Workflow_Transition</a></span>&nbsp;<span class="var-name">$transition</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../Cms/Workflow/Cms_Workflow_Transition.html">Cms_Workflow_Transition</a></span>
+				<span class="var-name">$transition</span>			</li>
+					<li>
+				<span class="var-type"><a href="../../Cms/Workflow/Cms_Workflow_Transition.html">Cms_Workflow_Transition</a></span>
+				<span class="var-name">&$transition</span>			</li>
+				</ul>
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Cms/Workflow/Cms_Workflow_Node_Interface.html#methodaddOutTransition">Cms_Workflow_Node_Interface::addOutTransition()</a></dt>
+						<dd>addOutTransition add outgoing transition</dd>
+					</dl>
+			
+	</div>
+<a name="methoddoActivity" id="doActivity"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">doActivity</span> (line <span class="line-number"><a href="../../__filesource/fsource_Cms_Workflow_codeWorkflowNode.php.html#a178">178</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">doActivity - execute on WO</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			doActivity
+		</span>
+				()
+			</div>
+	
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Cms/Workflow/Cms_Workflow_Node_Interface.html#methoddoActivity">Cms_Workflow_Node_Interface::doActivity()</a></dt>
+						<dd>doActivity execute the doActivity action</dd>
+					</dl>
+			
+	</div>
+<a name="methodentry" id="entry"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">entry</span> (line <span class="line-number"><a href="../../__filesource/fsource_Cms_Workflow_codeWorkflowNode.php.html#a167">167</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">entry - executed after a transition</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			entry
+		</span>
+				()
+			</div>
+	
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Cms/Workflow/Cms_Workflow_Node_Interface.html#methodentry">Cms_Workflow_Node_Interface::entry()</a></dt>
+						<dd>entry  execute the entry action</dd>
+					</dl>
+			
+	</div>
+<a name="methodgetOutTransition" id="getOutTransition"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">getOutTransition</span> (line <span class="line-number"><a href="../../__filesource/fsource_Cms_Workflow_codeWorkflowNode.php.html#a122">122</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getOutTransition
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$transitionId</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$transitionId</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodisCurrentState" id="isCurrentState"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">isCurrentState</span> (line <span class="line-number"><a href="../../__filesource/fsource_Cms_Workflow_codeWorkflowNode.php.html#a183">183</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			isCurrentState
+		</span>
+				()
+			</div>
+	
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Cms/Workflow/Cms_Workflow_Node_Interface.html#methodisCurrentState">Cms_Workflow_Node_Interface::isCurrentState()</a></dt>
+						<dd>isCurrentState report if this is the current workflow state</dd>
+					</dl>
+			
+	</div>
+<a name="methodsetDoActivity" id="setDoActivity"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">setDoActivity</span> (line <span class="line-number"><a href="../../__filesource/fsource_Cms_Workflow_codeWorkflowNode.php.html#a131">131</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setDoActivity
+		</span>
+					(<span class="var-type"><a href="../../Cms/Workflow/Cms_Workflow_Action.html">Cms_Workflow_Action</a></span>&nbsp;<span class="var-name">&$action</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../Cms/Workflow/Cms_Workflow_Action.html">Cms_Workflow_Action</a></span>
+				<span class="var-name">&$action</span>			</li>
+				</ul>
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Cms/Workflow/Cms_Workflow_Node_Interface.html#methodsetDoActivity">Cms_Workflow_Node_Interface::setDoActivity()</a></dt>
+						<dd>setDoActivity set activity action</dd>
+					</dl>
+			
+	</div>
+<a name="methodsetEntry" id="setEntry"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">setEntry</span> (line <span class="line-number"><a href="../../__filesource/fsource_Cms_Workflow_codeWorkflowNode.php.html#a136">136</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setEntry
+		</span>
+					(<span class="var-type"><a href="../../Cms/Workflow/Cms_Workflow_Action.html">Cms_Workflow_Action</a></span>&nbsp;<span class="var-name">&$action</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../Cms/Workflow/Cms_Workflow_Action.html">Cms_Workflow_Action</a></span>
+				<span class="var-name">&$action</span>			</li>
+				</ul>
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Cms/Workflow/Cms_Workflow_Node_Interface.html#methodsetEntry">Cms_Workflow_Node_Interface::setEntry()</a></dt>
+						<dd>setEntry set entry action</dd>
+					</dl>
+			
+	</div>
+<a name="methodsetWorkflow" id="setWorkflow"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">setWorkflow</span> (line <span class="line-number"><a href="../../__filesource/fsource_Cms_Workflow_codeWorkflowNode.php.html#a148">148</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">setWorkflow - set reference to the workflow container</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setWorkflow
+		</span>
+					(<span class="var-type"><a href="../../Cms/Workflow/Cms_Workflow.html">Cms_Workflow</a></span>&nbsp;<span class="var-name">&$wf</span>, <span class="var-type"><a href="../../Cms/Workflow/Cms_Workflow.html">Cms_Workflow</a></span>&nbsp;<span class="var-name">$wf</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../Cms/Workflow/Cms_Workflow.html">Cms_Workflow</a></span>
+				<span class="var-name">$wf</span>			</li>
+					<li>
+				<span class="var-type"><a href="../../Cms/Workflow/Cms_Workflow.html">Cms_Workflow</a></span>
+				<span class="var-name">&$wf</span>			</li>
+				</ul>
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../../Cms/Workflow/Cms_Workflow_Node_Interface.html#methodsetWorkflow">Cms_Workflow_Node_Interface::setWorkflow()</a></dt>
+						<dd>setWorkflow bind to a workflow</dd>
+					</dl>
+			
+	</div>
+<a name="method_addTransition" id="_addTransition"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/PrivateMethod.png" />
+		<span class="method-title">_addTransition</span> (line <span class="line-number"><a href="../../__filesource/fsource_Cms_Workflow_codeWorkflowNode.php.html#a75">75</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">_addTransition private method to add in or out transistion  NOTE: that currenlty incomming transitions are not used in the workflow</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_addTransition
+		</span>
+					(<span class="var-type"><a href="../../Cms/Workflow/Cms_Workflow_Transition.html">Cms_Workflow_Transition</a></span>&nbsp;<span class="var-name">&$transition</span>, <span class="var-type"><a href="../../Cms/Workflow/Cms_Workflow_Transition.html">Cms_Workflow_Transition</a></span>&nbsp;<span class="var-name">$transition</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../../Cms/Workflow/Cms_Workflow_Transition.html">Cms_Workflow_Transition</a></span>
+				<span class="var-name">$transition</span>			</li>
+					<li>
+				<span class="var-type"><a href="../../Cms/Workflow/Cms_Workflow_Transition.html">Cms_Workflow_Transition</a></span>
+				<span class="var-name">&$transition</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method_doAction" id="_doAction"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/PrivateMethod.png" />
+		<span class="method-title">_doAction</span> (line <span class="line-number"><a href="../../__filesource/fsource_Cms_Workflow_codeWorkflowNode.php.html#a153">153</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	<ul class="tags">
+				<li><span class="field">access:</span> private</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_doAction
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$action_name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$action_name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method__get" id="__get"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">__get</span> (line <span class="line-number"><a href="../../__filesource/fsource_Cms_Workflow_codeWorkflowNode.php.html#a57">57</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">__get - all node data is read-only</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			__get
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method__set" id="__set"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<img src="../../media/images/Method.png" />
+		<span class="method-title">__set</span> (line <span class="line-number"><a href="../../__filesource/fsource_Cms_Workflow_codeWorkflowNode.php.html#a62">62</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			__set
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$name</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$name</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$value</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+	
+	<p class="notes" id="credit">
+		Documentation generated on Thu, 27 Jan 2011 11:48:54 -0800 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>
